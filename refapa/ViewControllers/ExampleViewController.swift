@@ -9,7 +9,7 @@ import UIKit
 
 class ExampleViewController: UIViewController {
 
-    let lesson: Lesson!
+    var lesson: Lesson!
     
     @IBOutlet weak var img: UIImageView!
     
@@ -17,7 +17,7 @@ class ExampleViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        img.image = lesson.lessonDescription[0].imgFoto
+        img.image = lesson.lessonExample.examples[0].imgFoto
     }
     
 
@@ -30,7 +30,7 @@ class ExampleViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         let structureVC = segue.destination as! StructureViewController
-        structureVC.lesson = structureVC
+        structureVC.lesson = lesson
     }
 
 }

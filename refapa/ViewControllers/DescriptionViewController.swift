@@ -31,7 +31,7 @@ class DescriptionViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         let exampleVC = segue.destination as! ExampleViewController
-        exampleVC.lesson = exampleVC
+        exampleVC.lesson = lesson
     }
 
 }

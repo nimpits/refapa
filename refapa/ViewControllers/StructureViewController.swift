@@ -9,7 +9,7 @@ import UIKit
 
 class StructureViewController: UIViewController {
 
-    let lesson: Lesson!
+    var lesson: Lesson!
     
     @IBOutlet weak var img: UIImageView!
     
