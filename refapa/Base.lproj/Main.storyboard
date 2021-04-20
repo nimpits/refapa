@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ACC-3d-7vY" kind="show" id="x25-32-r3Z"/>
+                                    <segue destination="ACC-3d-7vY" kind="show" id="a4c-Cl-rbm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This view must display topics of the selected section." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSQ-k0-6Am">
@@ -101,41 +101,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V03-or-anR">
-                                <rect key="frame" x="126" y="74" width="123.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V03-or-anR">
+                                <rect key="frame" x="125.5" y="74" width="124" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bBa-mh-pqw">
-                                <rect key="frame" x="16" y="135" width="343" height="331"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FXo-LF-ezr">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="278"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cMt-Sg-58H">
-                                        <rect key="frame" x="0.0" y="294" width="343" height="37"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl4-Cf-XdF">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="37"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="FXo-LF-ezr" firstAttribute="top" secondItem="bBa-mh-pqw" secondAttribute="top" id="MWK-tM-vzj"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MWK-tM-vzj"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-JT-GS2">
-                                <rect key="frame" x="75.5" y="496" width="224" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FXo-LF-ezr">
+                                <rect key="frame" x="16" y="135" width="343" height="291"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-JT-GS2">
+                                <rect key="frame" x="75.5" y="460" width="224" height="40"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Whe-KK-8n8"/>
@@ -157,30 +133,28 @@
                         <viewLayoutGuide key="safeArea" id="hSO-kj-hve"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hSO-kj-hve" firstAttribute="trailing" secondItem="bBa-mh-pqw" secondAttribute="trailing" constant="16" id="7an-BD-Yh4"/>
+                            <constraint firstItem="AZA-JT-GS2" firstAttribute="top" secondItem="FXo-LF-ezr" secondAttribute="bottom" constant="34" id="1n8-tf-Uqt"/>
+                            <constraint firstItem="FXo-LF-ezr" firstAttribute="top" secondItem="V03-or-anR" secondAttribute="bottom" constant="32" id="9m5-ll-qN9"/>
+                            <constraint firstItem="FXo-LF-ezr" firstAttribute="centerX" secondItem="PtT-0q-Czv" secondAttribute="centerX" id="F8C-VM-Vw3"/>
                             <constraint firstItem="AZA-JT-GS2" firstAttribute="centerX" secondItem="PtT-0q-Czv" secondAttribute="centerX" id="KGt-w7-AOi"/>
-                            <constraint firstItem="bBa-mh-pqw" firstAttribute="leading" secondItem="hSO-kj-hve" secondAttribute="leading" constant="16" id="PE0-L1-dci"/>
-                            <constraint firstItem="AZA-JT-GS2" firstAttribute="top" secondItem="bBa-mh-pqw" secondAttribute="bottom" constant="30" id="WiH-m0-5Fa"/>
-                            <constraint firstItem="bBa-mh-pqw" firstAttribute="top" secondItem="V03-or-anR" secondAttribute="bottom" constant="32" id="ZeM-em-Ut9"/>
-                            <constraint firstItem="bBa-mh-pqw" firstAttribute="top" secondItem="V03-or-anR" secondAttribute="bottom" constant="32" id="dbj-Gk-Qzj"/>
+                            <constraint firstItem="hSO-kj-hve" firstAttribute="trailing" secondItem="FXo-LF-ezr" secondAttribute="trailing" constant="16" id="Nuw-jJ-Tcv"/>
                             <constraint firstItem="V03-or-anR" firstAttribute="top" secondItem="hSO-kj-hve" secondAttribute="top" constant="30" id="eM9-3e-c1V"/>
-                            <constraint firstItem="hSO-kj-hve" firstAttribute="bottom" secondItem="AZA-JT-GS2" secondAttribute="bottom" constant="40" id="qmh-Oh-7Np"/>
-                            <constraint firstItem="hSO-kj-hve" firstAttribute="bottom" secondItem="AZA-JT-GS2" secondAttribute="bottom" constant="131" id="yiv-Zd-6PH"/>
+                            <constraint firstItem="hSO-kj-hve" firstAttribute="bottom" secondItem="AZA-JT-GS2" secondAttribute="bottom" constant="167" id="qmh-Oh-7Np"/>
+                            <constraint firstItem="AZA-JT-GS2" firstAttribute="top" secondItem="FXo-LF-ezr" secondAttribute="bottom" constant="34" id="s0C-GX-byr"/>
+                            <constraint firstItem="FXo-LF-ezr" firstAttribute="leading" secondItem="hSO-kj-hve" secondAttribute="leading" constant="16" id="t2D-qj-2la"/>
                             <constraint firstItem="V03-or-anR" firstAttribute="centerX" secondItem="PtT-0q-Czv" secondAttribute="centerX" id="zOo-7j-zlW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="qmh-Oh-7Np"/>
-                                <exclude reference="ZeM-em-Ut9"/>
+                                <exclude reference="s0C-GX-byr"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Lesson" id="zrh-ne-QAG">
+                    <navigationItem key="navigationItem" title="Autor" id="zrh-ne-QAG">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="hI7-sE-Xdb"/>
                     </navigationItem>
                     <connections>
                         <outlet property="img" destination="FXo-LF-ezr" id="Txi-zO-n23"/>
-                        <outlet property="lbDescription" destination="Nl4-Cf-XdF" id="7x2-1X-rdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vs2-Ub-ShI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,7 +225,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Lesson" id="SW9-a6-yc9">
+                    <navigationItem key="navigationItem" title="Autor" id="SW9-a6-yc9">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="Vwo-gV-0wK"/>
                     </navigationItem>
                     <connections>
@@ -319,7 +293,7 @@
                             <constraint firstItem="Bvk-dk-KSG" firstAttribute="bottom" secondItem="kFz-ca-PVt" secondAttribute="bottom" constant="167" id="ms3-FE-lTf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lesson" id="RW4-JL-a62">
+                    <navigationItem key="navigationItem" title="Autor" id="RW4-JL-a62">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="tf0-Uu-mAd"/>
                     </navigationItem>
                     <connections>
