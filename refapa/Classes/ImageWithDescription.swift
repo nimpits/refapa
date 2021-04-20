@@ -8,11 +8,11 @@
 import UIKit
 
 class ImageWithDescription: NSObject {
-    let description : String
+    var imgDescription : String
     let imgFoto : UIImage!
     
-    init(description: String, imgFoto: UIImage!) {
-        self.description = description
+    init(imgDescription: String, imgFoto: UIImage!) {
+        self.imgDescription = imgDescription
         self.imgFoto = imgFoto
     }
 }
