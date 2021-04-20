@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     // Este arreglo dummy se cargara con los archivos guardados desde un plist
+    @IBOutlet weak var autorBoton: UIButton!
+    
+    
     var dummyLesson = Lesson(
         lessonName: "Autor",
         completed: true,
@@ -40,6 +43,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         var sections = [
             Section(
