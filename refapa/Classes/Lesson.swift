@@ -13,9 +13,9 @@ class Lesson: NSObject {
     let lessonStructure: LessonStructure
     var lessonDescription = [ImageWithDescription]()
     let lessonExample : Example
-    let lessonQuiz : Quiz
+    let lessonQuiz : Quiz!
     
-    init(lessonName: String, completed: Bool, lessonStructure: LessonStructure, lessonDescription: [ImageWithDescription], lessonExample: Example, lessonQuiz: Quiz) {
+    init(lessonName: String, completed: Bool, lessonStructure: LessonStructure, lessonDescription: [ImageWithDescription], lessonExample: Example, lessonQuiz: Quiz!) {
         self.lessonName = lessonName
         self.completed = completed
         self.lessonStructure = lessonStructure

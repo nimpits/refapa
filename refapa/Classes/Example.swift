@@ -10,8 +10,8 @@ import UIKit
 class Example: NSObject {
     var examples = [ImageWithDescription]()
     
-    init(examples: ImageWithDescription) {
-        self.examples = [examples]
+    init(examples: [ImageWithDescription]) {
+        self.examples = examples
     }
 
 }
