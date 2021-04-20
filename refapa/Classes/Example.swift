@@ -11,7 +11,7 @@ class Example: NSObject {
     var examples = [ImageWithDescription]()
     
     init(examples: ImageWithDescription) {
-        self.examples = examples
+        self.examples = [examples]
     }
 
 }
