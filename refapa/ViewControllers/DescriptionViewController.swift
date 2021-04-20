@@ -9,16 +9,63 @@ import UIKit
 
 class DescriptionViewController: UIViewController {
     
-    let lesson = Lesson.init(lessonName: "Autor", completed: false, lessonStructure: LessonStructure.init(lessonDescription: "Lesson Structure's Description", examples: [ImageWithDescription.init(imgDescription: "Lesson Structure Image 1 Description", imgFoto: UIImage.init(named: "dog1"))]), lessonDescription: [ImageWithDescription.init(imgDescription: "Lesson Description Image Description", imgFoto: UIImage.init(named: "dog2"))], lessonExample: Example.init(examples: ImageWithDescription.init(imgDescription: "Lesson Example Image Description", imgFoto: UIImage.init(named: "dog3"))), lessonQuiz: Quiz.init(grade: 0.0, questions: [Question.init(questionText: "Question text 1", points: 10, questionImage: ImageWithDescription.init(imgDescription: "Image description", imgFoto: UIImage.init(named: "dog4")))]))
+    let lesson = Lesson.init(
+        lessonName: "Autor",
+        completed: false,
+        lessonStructure: LessonStructure.init(
+            lessonDescription: "Lesson Structure's Description",
+            examples: [
+                ImageWithDescription.init(
+                    imgDescription: "Lesson Structure Image 1 Description",
+                    imgFoto: UIImage.init(named: "dog1")
+                )
+            ]
+        ),
+        lessonDescription: [
+            ImageWithDescription.init(
+                imgDescription: "Lesson Description Image Description. Lesson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
+                imgFoto: nil
+            )
+        ],
+        lessonExample: Example.init(
+            examples: ImageWithDescription.init(
+                imgDescription: "Lesson Example Image Description",
+                imgFoto: UIImage.init(named: "dog3")
+            )
+        ),
+        lessonQuiz: Quiz.init(
+            grade: 0.0,
+            questions: [
+                Question.init(
+                    questionText: "Question text 1",
+                    points: 10,
+                    questionImage: ImageWithDescription.init(
+                        imgDescription: "Image description",
+                        imgFoto: UIImage.init(named: "dog4")
+                    )
+                )
+            ]
+        )
+    )
     
     
     @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var lbDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        img.image = lesson.lessonDescription[0].imgFoto
+        title = lesson.lessonName
+        
+        
+        
+        if let foto = lesson.lessonDescription[0].imgFoto {
+            img.image = foto
+        } else {
+            img.isHidden = true
+        }
+        
+        lbDescription.text = lesson.lessonDescription[0].imgDescription
     }
     
 

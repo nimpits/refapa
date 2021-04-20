@@ -16,7 +16,7 @@ class ExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = lesson.lessonName
         img.image = lesson.lessonExample.examples[0].imgFoto
     }
     
