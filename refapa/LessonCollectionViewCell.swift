@@ -9,8 +9,6 @@
 import UIKit
 
 class LessonCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var itemLabel: UILabel!
-    @IBOutlet weak var itemProgressBar: UIProgressView!
+   
     
 }

@@ -26,6 +26,7 @@
 		435FC75C262E6E310061C6EC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75B262E6E310061C6EC /* DescriptionViewController.swift */; };
 		435FC75F262E6E850061C6EC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75E262E6E850061C6EC /* ExampleViewController.swift */; };
 		435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC761262E6EA50061C6EC /* StructureViewController.swift */; };
+		AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		435FC75B262E6E310061C6EC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = ViewControllers/DescriptionViewController.swift; sourceTree = "<group>"; };
 		435FC75E262E6E850061C6EC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ViewControllers/ExampleViewController.swift; sourceTree = "<group>"; };
 		435FC761262E6EA50061C6EC /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructureViewController.swift; path = ViewControllers/StructureViewController.swift; sourceTree = "<group>"; };
+		AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				3C1B888F262C0DB50041D0F2 /* SceneDelegate.swift */,
 				3C1B8891262C0DB50041D0F2 /* ViewController.swift */,
 				3C1B8893262C0DB50041D0F2 /* Main.storyboard */,
+				AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */,
 				4334B4342631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift */,
 				435FC75E262E6E850061C6EC /* ExampleViewController.swift */,
 				435FC761262E6EA50061C6EC /* StructureViewController.swift */,
@@ -199,6 +202,7 @@
 				3C1B888E262C0DB50041D0F2 /* AppDelegate.swift in Sources */,
 				435FC75F262E6E850061C6EC /* ExampleViewController.swift in Sources */,
 				3C1B88BD262C0F620041D0F2 /* Question.swift in Sources */,
+				AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */,
 				3C1B8890262C0DB50041D0F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

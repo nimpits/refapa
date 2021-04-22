@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,200 +33,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-tx-Cgn">
-                                <rect key="frame" x="313" y="626" width="46" height="30"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L8i-nU-9yI">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="bHZ-Q2-QvU" kind="show" id="gYz-TR-lEy"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partes de la Referencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OM-EO-0yx">
-                                <rect key="frame" x="100" y="57" width="175" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipos de Referencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPL-gN-xib">
-                                <rect key="frame" x="107" y="348" width="160" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHm-vM-ItK">
-                                <rect key="frame" x="204" y="90" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="paginas">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Páginas">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-pn-eWu">
-                                <rect key="frame" x="204" y="215" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="FechaConsulta">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Fecha">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlM-gC-zqK">
-                                <rect key="frame" x="38" y="90" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="Autor">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Autor">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N13-Nl-4Fj">
-                                <rect key="frame" x="35" y="215" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="FuenteConsulta">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Fuente">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-kF-frK">
-                                <rect key="frame" x="203" y="377" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="dog2">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Libro">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zZ-Pl-nWq">
-                                <rect key="frame" x="203" y="502" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="dog3">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Página Web">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-U3-t9k">
-                                <rect key="frame" x="37" y="377" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="dog1">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Articulo Cientifico">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-6d-0y2">
-                                <rect key="frame" x="34" y="502" width="138" height="108"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES"/>
-                                </accessibility>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="144" maxY="-83"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                <state key="normal" image="dog5">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Periodico">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oa8-Ak-sDd">
+                                    <size key="itemSize" width="350" height="220"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lessonCollection" id="fFj-Tz-79i" customClass="LCollectionViewCell" customModule="refapa" customModuleProvider="target">
+                                        <rect key="frame" x="12.5" y="0.0" width="350" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rDf-lH-xb8">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-Hp-liU">
+                                                    <rect key="frame" x="8" y="8" width="334" height="175"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-ff-8qm">
+                                                    <rect key="frame" x="154" y="191" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="350" height="220"/>
+                                        <connections>
+                                            <outlet property="itemImage" destination="pdR-Hp-liU" id="0GJ-1U-fez"/>
+                                            <outlet property="itemLabel" destination="6aZ-ff-8qm" id="qts-Bg-VyB"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="REFAPPA" id="kSR-c2-X4A"/>
                     <connections>
-                        <outlet property="autorBoton" destination="AlM-gC-zqK" id="anv-SZ-uMN"/>
+                        <outlet property="collectionView" destination="L8i-nU-9yI" id="lzt-bj-6nb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="99"/>
+            <point key="canvasLocation" x="-612" y="98.50074962518741"/>
         </scene>
         <!--TopicsVC-->
         <scene sceneID="fM9-aO-dyV">
@@ -267,7 +125,7 @@
             <objects>
                 <viewController id="DWh-k8-lYw" userLabel="QuizVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r05-EB-0H9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-cU-gl6">
@@ -301,11 +159,11 @@
             <objects>
                 <viewController id="PP1-Uw-FYN" userLabel="DescriptionVC" customClass="DescriptionViewController" customModule="refapa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5i5-NL-xC0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6i-OI-uKR">
-                                <rect key="frame" x="0.0" y="44" width="375" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liB-aB-kEo">
                                         <rect key="frame" x="0.0" y="16" width="375" height="29"/>
@@ -323,7 +181,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z82-Ii-CkZ">
-                                <rect key="frame" x="0.0" y="105" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="61" width="375" height="514"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="347" id="Kkf-0s-STf" customClass="ImageWithDescriptionTableViewCell" customModule="refapa" customModuleProvider="target">
@@ -365,7 +223,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjs-Vx-UxO">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="575" width="375" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNO-bF-UbO">
                                         <rect key="frame" x="75.5" y="16" width="224" height="40"/>
@@ -428,11 +286,11 @@
             <objects>
                 <viewController id="YGv-f5-Fyg" userLabel="ExampleVC" customClass="ExampleViewController" customModule="refapa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q9o-cb-xEl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSg-wU-oPD">
-                                <rect key="frame" x="0.0" y="44" width="375" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-yZ-dUJ">
                                         <rect key="frame" x="0.0" y="16" width="375" height="29"/>
@@ -450,7 +308,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xsc-vv-me6">
-                                <rect key="frame" x="0.0" y="105" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="61" width="375" height="514"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="347" id="IEd-T6-yCG" customClass="ImageWithDescriptionTableViewCell" customModule="refapa" customModuleProvider="target">
@@ -492,7 +350,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-gM-mrc">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="575" width="375" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-i0-Zz3">
                                         <rect key="frame" x="75.5" y="16" width="224" height="40"/>
@@ -555,11 +413,11 @@
             <objects>
                 <viewController id="9Wo-18-XSc" userLabel="StructureVC" customClass="StructureViewController" customModule="refapa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gl1-KK-XXC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-cs-hG0">
-                                <rect key="frame" x="0.0" y="44" width="375" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Structure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-NN-Lvb">
                                         <rect key="frame" x="0.0" y="16" width="375" height="29"/>
@@ -577,7 +435,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-Ck-lAI">
-                                <rect key="frame" x="0.0" y="105" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="61" width="375" height="514"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" rowHeight="347" id="cdX-4m-Xoh" customClass="ImageWithDescriptionTableViewCell" customModule="refapa" customModuleProvider="target">
@@ -619,7 +477,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LR-KJ-9DJ">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="575" width="375" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je3-oL-GDo">
                                         <rect key="frame" x="75.5" y="16" width="224" height="40"/>
@@ -679,14 +537,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Autor" width="1280" height="720"/>
-        <image name="FechaConsulta" width="1280" height="720"/>
-        <image name="FuenteConsulta" width="1280" height="720"/>
-        <image name="dog1" width="1100" height="628"/>
-        <image name="dog2" width="800" height="533"/>
-        <image name="dog3" width="3072" height="3072"/>
-        <image name="dog5" width="1240" height="698"/>
-        <image name="paginas" width="1280" height="720"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
