@@ -31,7 +31,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         lessonName: "Autor",
         completed: true,
         lessonStructure: LessonStructure(
-            lessonDescription: "Esta es la descripcion del autor, aqui se explica como funciona",
             examples: [
                 ImageWithDescription(
                     imgDescription: "Aqui va una descripciond e la foto",
