@@ -7,11 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    
+    
+    var dummyArray = [Lesson]()
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dummyArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "lessonCollection", for: indexPath) as! LessonCollectionViewCell
+        cell.itemLabel.text = dummyArray[indexPath.row].lessonName
+        cell.itemImage.image = UIImage(named: dummyArray[indexPath.row].lessonName)
+        //cell.itemProgressBar.progress = dummyArray[indexPath.row].
+    }
+    
     // Este arreglo dummy se cargara con los archivos guardados desde un plist
-    @IBOutlet weak var autorBoton: UIButton!
-    
-    
+
     var dummyLesson = Lesson(
         lessonName: "Autor",
         completed: true,
@@ -40,12 +55,15 @@ class ViewController: UIViewController {
         ),
         lessonQuiz: nil
     )
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        dummyArray.append(dummyLesson)
         
         var sections = [
             Section(
@@ -65,6 +83,11 @@ class ViewController: UIViewController {
             )
         ]
     }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+            var text = "Button \(sender.tag + 1) was pressed"
+        print(text)
+        }
 
 
 }

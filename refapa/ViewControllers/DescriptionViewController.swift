@@ -28,10 +28,10 @@ class DescriptionViewController: UIViewController {
             )
         ],
         lessonExample: Example.init(
-            examples: ImageWithDescription.init(
+            examples: [ImageWithDescription.init(
                 imgDescription: "Lesson Example Image Description",
                 imgFoto: UIImage.init(named: "dog3")
-            )
+            )]
         ),
         lessonQuiz: Quiz.init(
             grade: 0.0,
