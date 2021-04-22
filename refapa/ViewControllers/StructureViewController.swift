@@ -7,17 +7,35 @@
 
 import UIKit
 
-class StructureViewController: UIViewController {
-
-    var lesson: Lesson!
+class StructureViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var img: UIImageView!
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lesson.lessonExample.examples.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! ImageWithDescriptionTableViewCell
+
+        let imgWithDesc = lesson.lessonStructure.examples[indexPath.row]
+        cell.imgView.image = imgWithDesc.imgFoto
+        cell.lbDescription.text = imgWithDesc.imgDescription
+
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 324
+    }
+    
+    var lesson: Lesson!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = lesson.lessonName
-        img.image = lesson.lessonStructure.examples[0].imgFoto
+        
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
 

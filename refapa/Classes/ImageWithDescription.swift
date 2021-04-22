@@ -8,10 +8,10 @@
 import UIKit
 
 class ImageWithDescription: NSObject {
-    var imgDescription : String
+    var imgDescription : String?
     let imgFoto : UIImage?
     
-    init(imgDescription: String, imgFoto: UIImage?) {
+    init(imgDescription: String?, imgFoto: UIImage?) {
         self.imgDescription = imgDescription
         self.imgFoto = imgFoto
     }

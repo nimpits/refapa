@@ -8,12 +8,9 @@
 import UIKit
 
 class LessonStructure: NSObject {
-
-    let lessonDescription : String
     var examples = [ImageWithDescription]()
     
-    init(lessonDescription : String, examples : [ImageWithDescription]) {
-        self.lessonDescription = lessonDescription
+    init(examples : [ImageWithDescription]) {
         self.examples = examples
     }
 }
