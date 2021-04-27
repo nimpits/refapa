@@ -14,13 +14,15 @@ class Topic: NSObject {
     let priority: Int
     var completion : Int // calculated on the go
     var lessons = [Lesson]()
+    var buttonTag: Int!
     
-    init(topicName: String, topicDescription: String, imgFoto: UIImage!, priority: Int, completion: Int, lessons: [Lesson]) {
+    init(topicName: String, topicDescription: String, buttonTag: Int, imgFoto: UIImage!, priority: Int, completion: Int, lessons: [Lesson]) {
         self.topicName = topicName
         self.topicDescription = topicDescription
         self.imgFoto = imgFoto
         self.priority = priority
         self.completion = completion
         self.lessons = lessons
+        self.buttonTag = buttonTag
     }
 }

@@ -7,16 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-    
-    @IBOutlet weak var collectionView: UICollectionView!
+class ViewController: UIViewController {
     
     // Este arreglo dummy se cargara con los archivos guardados desde un plist
+    
+    @IBOutlet weak var authorButton: UIButton!
+    @IBOutlet weak var pageButton: UIButton!
+    @IBOutlet weak var sourceButton: UIButton!
+    @IBOutlet weak var dateButton: UIButton!
+    @IBOutlet weak var articleButton: UIButton!
+    @IBOutlet weak var bookButton: UIButton!
+    @IBOutlet weak var newspaperButton: UIButton!
+    @IBOutlet weak var webPageButton: UIButton!
+    
+    var lessonsToSend: [Lesson]!
+    
 
+    /*
     var dummyLesson = Lesson(
         lessonName: "Autor",
         completed: true,
+        buttonTag: 1,
         lessonStructure: LessonStructure(
             examples: [
                 ImageWithDescription(
@@ -41,6 +52,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         ),
         lessonQuiz: nil
     )
+ */
     
     
     var sections = [
@@ -52,6 +64,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 Topic(
                     topicName: "Autor",
                     topicDescription: "Aprende sobre el Autor en APA",
+                    buttonTag: 1,
                     imgFoto: UIImage(named: "Autor"),
                     priority: 0,
                     completion: 0,
@@ -87,6 +100,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         )
     ]
     
+    
+    /*
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print(sections[0].topics.count)
         return sections[0].topics.count
@@ -101,7 +116,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
-    /*
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             
         return 4
@@ -117,12 +131,55 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
+        //collectionView.delegate = self
+        //collectionView.dataSource = self
+    
     
     }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        print("Button Pressed")
+        switch sender {
+           case authorButton:
+                lessonsToSend = sections[0].topics[0].lessons
+            performSegue(withIdentifier: "mainToLesson", sender: sender)
+            print("1")
+           case pageButton:
+                lessonsToSend = sections[0].topics[0].lessons
+            performSegue(withIdentifier: "mainToLesson", sender: sender)
+           case sourceButton:
+                lessonsToSend = sections[0].topics[0].lessons
+            performSegue(withIdentifier: "mainToLesson", sender: sender)
+           case dateButton:
+                lessonsToSend = sections[0].topics[0].lessons
+            performSegue(withIdentifier: "mainToLesson", sender: sender)
+            case articleButton:
+                lessonsToSend = sections[0].topics[0].lessons
+                performSegue(withIdentifier: "mainToLesson", sender: sender)
+            case bookButton:
+                lessonsToSend = sections[0].topics[0].lessons
+                performSegue(withIdentifier: "mainToLesson", sender: sender)
+            case newspaperButton:
+                lessonsToSend = sections[0].topics[0].lessons
+                performSegue(withIdentifier: "mainToLesson", sender: sender)
+            case webPageButton:
+                lessonsToSend = sections[0].topics[0].lessons
+                performSegue(withIdentifier: "mainToLesson", sender: sender)
+           default:
+               break
 
+           }
+        }
+
+    // We're using this to send the Lesson Objects to the next view, so that they can be prepped, showed in the table and usable
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destVC = segue.destination as? LessonsTableTableViewController
+        destVC?.lessonListSelectedByUser = lessonsToSend;
+        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
 
 }
 

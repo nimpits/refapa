@@ -10,6 +10,8 @@ import UIKit
 class LessonsTableTableViewController: UITableViewController {
    
     var lessonList = [Lesson]()
+    
+    var lessonListSelectedByUser: [Lesson]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
