@@ -86,40 +86,36 @@
             </objects>
             <point key="canvasLocation" x="-612" y="98.50074962518741"/>
         </scene>
-        <!--TopicsVC-->
-        <scene sceneID="fM9-aO-dyV">
+        <!--Lessons Table Table View Controller-->
+        <scene sceneID="KZw-cE-NYp">
             <objects>
-                <viewController id="bHZ-Q2-QvU" userLabel="TopicsVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JtM-pa-eFf">
+                <tableViewController id="NcF-bT-iRc" customClass="LessonsTableTableViewController" customModule="refapa" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9AW-wP-AOf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smb-Kh-Utd">
-                                <rect key="frame" x="164" y="281" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="PP1-Uw-FYN" kind="show" id="p0C-1a-Qhm"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This view must display topics of the selected section." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSQ-k0-6Am">
-                                <rect key="frame" x="56" y="169" width="303" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2RC-4a-ch4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Section's Topics" id="CWJ-Lj-tr5">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="bkh-ZZ-dWD"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ijH-To-bqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="Wdc-ws-b6a">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wdc-ws-b6a" id="XKQ-76-GLb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PP1-Uw-FYN" kind="show" id="VlH-vY-ztY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NcF-bT-iRc" id="9M0-ll-1x8"/>
+                            <outlet property="delegate" destination="NcF-bT-iRc" id="faK-zL-05H"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbU-YD-sUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="99"/>
+            <point key="canvasLocation" x="327" y="99"/>
         </scene>
         <!--QuizVC-->
         <scene sceneID="O8h-lQ-gsn">
