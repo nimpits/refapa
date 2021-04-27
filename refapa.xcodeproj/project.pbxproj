@@ -27,6 +27,7 @@
 		435FC75F262E6E850061C6EC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75E262E6E850061C6EC /* ExampleViewController.swift */; };
 		435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC761262E6EA50061C6EC /* StructureViewController.swift */; };
 		AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */; };
+		AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC56E652637939D002344BD /* Storyboard2.storyboard */; };
 		BC4E4AC026377AE3000138DC /* LessonsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		435FC75E262E6E850061C6EC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ViewControllers/ExampleViewController.swift; sourceTree = "<group>"; };
 		435FC761262E6EA50061C6EC /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructureViewController.swift; path = ViewControllers/StructureViewController.swift; sourceTree = "<group>"; };
 		AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEC56E652637939D002344BD /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 		BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		3C1B8881262C0DB50041D0F2 = {
 			isa = PBXGroup;
 			children = (
+				AEC56E652637939D002344BD /* Storyboard2.storyboard */,
 				3C1B888C262C0DB50041D0F2 /* refapa */,
 				3C1B888B262C0DB50041D0F2 /* Products */,
 			);
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */,
 				3C1B889A262C0DB70041D0F2 /* LaunchScreen.storyboard in Resources */,
 				3C1B8897262C0DB70041D0F2 /* Assets.xcassets in Resources */,
 				3C1B8895262C0DB50041D0F2 /* Main.storyboard in Resources */,

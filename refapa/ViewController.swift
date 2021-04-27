@@ -94,12 +94,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "lessonCollection", for: indexPath) as! LCollectionViewCell
+        print(sections[0].topics[indexPath.row].topicName)
         cell.itemLabel.text = sections[0].topics[indexPath.row].topicName
-        cell.itemImage.image = UIImage(named: sections[0].topics[indexPath.row].topicName)
+       // cell.itemImage.image = UIImage(named: sections[0].topics[indexPath.row].topicName)
         //cell.itemProgressBar.progress = dummyArray[indexPath.row].
         return cell
     }
     
+    /*
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             
         return 4
@@ -109,7 +111,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
         return 1
     }
-    
+    */
     
     
 
