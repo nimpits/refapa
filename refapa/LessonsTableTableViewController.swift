@@ -43,7 +43,7 @@ class LessonsTableTableViewController: UITableViewController {
         
         
         if lessonSelected.completed == true {
-            cell.contentView.backgroundColor = UIColor.green
+            cell.contentView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
         }
         else{}
         
@@ -94,7 +94,23 @@ class LessonsTableTableViewController: UITableViewController {
                     questionImage: ImageWithDescription.init(
                         imgDescription: "Image description",
                         imgFoto: UIImage.init(named: "dog4")
+                        
+                    ),
+                    questionAnswer: [
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer1"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer2"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer3"
+                    ),
+                        Answer.init(
+                        isCorrect: true, answerText: "Answer4"
                     )
+                    ]
+                    
                 )
             ]
         )
@@ -142,7 +158,23 @@ class LessonsTableTableViewController: UITableViewController {
                     questionImage: ImageWithDescription.init(
                         imgDescription: "Image description",
                         imgFoto: UIImage.init(named: "dog4")
+                        
+                    ),
+                    questionAnswer: [
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer1"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer2"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer3"
+                    ),
+                        Answer.init(
+                        isCorrect: true, answerText: "Answer4"
                     )
+                    ]
+                    
                 )
             ]
         )

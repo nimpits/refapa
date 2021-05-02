@@ -29,6 +29,7 @@
 		AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */; };
 		AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC56E652637939D002344BD /* Storyboard2.storyboard */; };
 		BC4E4AC026377AE3000138DC /* LessonsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */; };
+		BC9CE6CE263F57D500B2AF6A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEC56E652637939D002344BD /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 		BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableTableViewController.swift; sourceTree = "<group>"; };
+		BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				3C1B888F262C0DB50041D0F2 /* SceneDelegate.swift */,
 				3C1B8891262C0DB50041D0F2 /* ViewController.swift */,
 				3C1B8893262C0DB50041D0F2 /* Main.storyboard */,
+				BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */,
 				BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */,
 				AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */,
 				4334B4342631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift */,
@@ -202,6 +205,7 @@
 				3C1B88B7262C0F430041D0F2 /* LessonStructure.swift in Sources */,
 				435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */,
 				3C1B88A7262C0EBC0041D0F2 /* Topic.swift in Sources */,
+				BC9CE6CE263F57D500B2AF6A /* QuizViewController.swift in Sources */,
 				4334B4352631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift in Sources */,
 				3C1B88A4262C0EAC0041D0F2 /* Section.swift in Sources */,
 				3C1B88BA262C0F550041D0F2 /* Quiz.swift in Sources */,
