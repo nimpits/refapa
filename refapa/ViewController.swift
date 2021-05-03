@@ -64,7 +64,6 @@ class ViewController: UIViewController {
                 Topic(
                     topicName: "Autor",
                     topicDescription: "Aprende sobre el Autor en APA",
-                    buttonTag: 1,
                     imgFoto: UIImage(named: "Autor"),
                     priority: 0,
                     completion: 0,
