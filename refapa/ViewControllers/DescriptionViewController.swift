@@ -97,7 +97,32 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
                     )
                     ]
                     
+                ),
+                Question.init(
+                    questionText: "Question text 2",
+                    points: 10,
+                    questionImage: ImageWithDescription.init(
+                        imgDescription: "Image description",
+                        imgFoto: UIImage.init(named: "dog4")
+                        
+                    ),
+                    questionAnswer: [
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer1"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer2"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer3"
+                    ),
+                        Answer.init(
+                        isCorrect: true, answerText: "Answer4"
+                    )
+                    ]
+                    
                 )
+                
             ]
         )
     )
