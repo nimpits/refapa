@@ -95,7 +95,8 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
                         Answer.init(
                         isCorrect: true, answerText: "Answer4"
                     )
-                    ]
+                    ],
+                    isAnswered : false
                     
                 ),
                 Question.init(
@@ -119,7 +120,8 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
                         Answer.init(
                         isCorrect: true, answerText: "Answer4"
                     )
-                    ]
+                    ],
+                    isAnswered : false
                     
                 )
                 

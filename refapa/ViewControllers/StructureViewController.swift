@@ -49,6 +49,9 @@ class StructureViewController: UIViewController, UITableViewDataSource, UITableV
         let quizVC = segue.destination as! QuizViewController
         quizVC.lesson = lesson
         
+        
+       
+        
     }
    
 

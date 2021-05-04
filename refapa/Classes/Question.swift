@@ -12,12 +12,14 @@ class Question: NSObject {
     let points : Int
     let questionImage: ImageWithDescription
     var questionAnswer = [Answer]()
+    let isAnswered : Bool
     
-    init(questionText: String, points: Int, questionImage : ImageWithDescription, questionAnswer: [Answer]) {
+    init(questionText: String, points: Int, questionImage : ImageWithDescription, questionAnswer: [Answer], isAnswered : Bool) {
         self.questionText = questionText
         self.points = points
         self.questionImage = questionImage
         self.questionAnswer = questionAnswer
+        self.isAnswered = isAnswered
     }
     
 }
