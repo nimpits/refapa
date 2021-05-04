@@ -32,7 +32,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lesson.lessonQuiz.questions.count
+        return lesson.lessonQuiz.questions[0].questionAnswer.count
         
     }
     
@@ -45,7 +45,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
      */
     
     func checkQuestion (lessonQuiz :Lesson) -> Int {
-    
+    return 3
     }
     
     func isAnswered (question : Question)-> Bool{
@@ -59,7 +59,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         
-        let a = lesson.lessonQuiz.questions.count
+      /*  let a = lesson.lessonQuiz.questions.count
         
         for i in 1...a {
             
@@ -67,9 +67,11 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 
             }
             
-        }
+        }*/
         
-        let question = lesson.lessonQuiz.questions[indexPath.row]
+        
+        
+        let question = lesson.lessonQuiz.questions[0]
         
         let questionAnswer = question.questionAnswer[indexPath.row].answerText
         
@@ -106,5 +108,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
