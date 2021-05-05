@@ -45,8 +45,11 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
      */
     
-    func checkQuestion (lessonQuiz :Lesson) -> Int {
-    return 3
+    func checkQuestion (question :Question) -> Bool {
+        if question.isAnswered == true {
+            return true
+        }
+    return false
     }
     
     /*
