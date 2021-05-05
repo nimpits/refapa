@@ -32,7 +32,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lesson.lessonQuiz.questions[0].questionAnswer.count
+        let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
+        return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
         
     }
     
@@ -48,11 +49,11 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     return 3
     }
     
+    /*
     func isAnswered (question : Question)-> Bool{
-        
         return false
-        
     }
+ */
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -70,24 +71,28 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }*/
         
         
-        
-        let question = lesson.lessonQuiz.questions[0]
-        
-        let questionAnswer = question.questionAnswer[indexPath.row].answerText
-        
+        let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
+        let question = lesson.lessonQuiz.questions[lastAnswered]
+        let questionAnswer = question.questionAnswer[indexPath.row].answerText //should we delete this?
         let questionText = question.questionText
-        
-        
-                
         lbTituloCelda.text = questionText
-        
-        
         cell.textLabel?.text = questionAnswer
     
         return cell
     }
     
-    /* func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
+        let toCheck = lesson.lessonQuiz.questions[lastAnswered].questionAnswer[indexPath.row].isCorrect
+        
+        if(toCheck){
+            lesson.lessonQuiz.lastQuestionAnswered += 1 //need to check if its the last question too
+            //give poitns to the user
+        }
+    }
+    
+    /*
+     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?
     {
         
         let question = lesson.lessonQuiz.questions[indexPath.row].questionText
