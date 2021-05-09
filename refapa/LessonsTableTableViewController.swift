@@ -107,7 +107,7 @@ class LessonsTableTableViewController: UITableViewController {
                         isCorrect: false, answerText: "Answer3"
                     ),
                         Answer.init(
-                        isCorrect: true, answerText: "Answer4"
+                        isCorrect: true, answerText: "Correct"
                     )
                     ],
                     isAnswered : false
@@ -172,7 +172,7 @@ class LessonsTableTableViewController: UITableViewController {
                         isCorrect: false, answerText: "Answer3"
                     ),
                         Answer.init(
-                        isCorrect: true, answerText: "Answer4"
+                        isCorrect: true, answerText: "Correct"
                     )
                     ],
                     isAnswered : false

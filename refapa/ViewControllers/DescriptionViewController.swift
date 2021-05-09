@@ -93,7 +93,7 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
                         isCorrect: false, answerText: "Answer3"
                     ),
                         Answer.init(
-                        isCorrect: true, answerText: "Answer4"
+                        isCorrect: true, answerText: "Correct"
                     )
                     ],
                     isAnswered : false
@@ -115,10 +115,10 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
                         isCorrect: false, answerText: "Answer2"
                     ),
                         Answer.init(
-                        isCorrect: false, answerText: "Answer3"
+                        isCorrect: true, answerText: " Correct"
                     ),
                         Answer.init(
-                        isCorrect: true, answerText: "Answer4"
+                        isCorrect: false, answerText: "Answer4"
                     )
                     ],
                     isAnswered : false
