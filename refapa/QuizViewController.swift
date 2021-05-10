@@ -42,6 +42,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if (lastAnswered == lesson.lessonQuiz.questions.count){
             
             lblCongrats.text = " Congratulations! You passed the quiz "
+            nextButton.setTitle("Back to main page", for: .normal)
             
             
             lesson.completed == true
@@ -118,6 +119,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
      @IBAction func checkCorrect(_ sender: UIButton) {
+      
+        
         if (correct == true){
             tableView.reloadData()
         }
