@@ -104,24 +104,15 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         let toCheck = lesson.lessonQuiz.questions[lastAnswered].questionAnswer[indexPath.row].isCorrect
         
-
-        if(toCheck){
-            print("Answer is correct!")
-            lesson.lessonQuiz.lastQuestionAnswered += 1 //need to check if its the last question too
-                //give poitns to the user
-                //move to next view
-        
         if(toCheck == true){
             lesson.lessonQuiz.lastQuestionAnswered += 1
             correct = true
             //need to check if its the last question too
             //give poitns to the user
-
-        }
-        else {
+        }else {
             correct = false
-            
-        }}}
+        }
+    }
         
     
     
