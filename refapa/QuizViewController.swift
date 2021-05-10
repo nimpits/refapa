@@ -16,13 +16,15 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var lblCongrats: UILabel!
+    
     var lesson: Lesson!
+    var correct : Bool!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nextButton.backgroundColor = UIColor.blue
         
         // Do any additional setup after loading the view.
@@ -32,9 +34,23 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
-        return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
         
+        
+        let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
+        
+        
+        if (lastAnswered == lesson.lessonQuiz.questions.count){
+            
+            lblCongrats.text = " Congratulations! You passed the quiz "
+            
+            
+            lesson.completed == true
+            return 0
+            
+        }
+        else{
+        return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
+        }
     }
     
      /* func isCorrect (answer : Answer) -> Bool {
@@ -83,17 +99,39 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
           }*/
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         let toCheck = lesson.lessonQuiz.questions[lastAnswered].questionAnswer[indexPath.row].isCorrect
         
+
         if(toCheck){
             print("Answer is correct!")
             lesson.lessonQuiz.lastQuestionAnswered += 1 //need to check if its the last question too
                 //give poitns to the user
                 //move to next view
+        
+        if(toCheck == true){
+            lesson.lessonQuiz.lastQuestionAnswered += 1
+            correct = true
+            //need to check if its the last question too
+            //give poitns to the user
+
         }
-    }
+        else {
+            correct = false
+            
+        }}}
+        
+    
+    
+    
+     @IBAction func checkCorrect(_ sender: UIButton) {
+        if (correct == true){
+            tableView.reloadData()
+        }
+        
+     }
     
     /*
      func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?

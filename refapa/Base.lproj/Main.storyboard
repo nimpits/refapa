@@ -233,7 +233,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twp-Cm-3kl">
-                                <rect key="frame" x="75" y="572" width="225" height="30"/>
+                                <rect key="frame" x="75" y="547" width="225" height="35"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="Check">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -241,7 +241,16 @@
                                 <state key="highlighted">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkCorrect:" destination="DWh-k8-lYw" eventType="touchUpInside" id="egg-Ef-7eQ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUP-fa-sox">
+                                <rect key="frame" x="20" y="537" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Efx-dB-b4p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,13 +259,15 @@
                             <constraint firstItem="Twp-Cm-3kl" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" constant="75" id="7kx-ud-4Wa"/>
                             <constraint firstItem="NoZ-bp-tLo" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" id="8Fx-bW-cac"/>
                             <constraint firstItem="NoZ-bp-tLo" firstAttribute="top" secondItem="Efx-dB-b4p" secondAttribute="top" constant="16" id="GCl-1q-k1O"/>
-                            <constraint firstItem="Twp-Cm-3kl" firstAttribute="top" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="45" id="PCM-o0-Baz"/>
+                            <constraint firstItem="QUP-fa-sox" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" constant="20" id="K8e-oa-IVV"/>
+                            <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="QUP-fa-sox" secondAttribute="trailing" constant="20" id="MDl-nL-Vax"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" constant="20" id="ZwR-Dx-54n"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="Twp-Cm-3kl" secondAttribute="trailing" constant="75" id="a3e-9q-Cc4"/>
-                            <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="Twp-Cm-3kl" secondAttribute="bottom" constant="45" id="bfR-CH-Dp8"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="ewg-ET-IDr" secondAttribute="trailing" constant="20" id="ecZ-XW-Mkp"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="fKs-Qc-oKq"/>
+                            <constraint firstItem="QUP-fa-sox" firstAttribute="top" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="10" id="lHL-xW-e6g"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="120" id="laQ-b0-gzg"/>
+                            <constraint firstItem="Twp-Cm-3kl" firstAttribute="top" secondItem="QUP-fa-sox" secondAttribute="bottom" constant="10" id="om8-kj-COH"/>
                             <constraint firstItem="NoZ-bp-tLo" firstAttribute="trailing" secondItem="Efx-dB-b4p" secondAttribute="trailing" id="p7k-ju-9gr"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="qRe-Le-Auv"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="zWw-dC-zv8"/>
@@ -267,6 +278,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lbTituloCelda" destination="orp-4A-oh9" id="Few-ee-csO"/>
+                        <outlet property="lblCongrats" destination="QUP-fa-sox" id="Gmg-zo-SPE"/>
                         <outlet property="nextButton" destination="Twp-Cm-3kl" id="ZKC-fs-RjL"/>
                         <outlet property="tableView" destination="ewg-ET-IDr" id="tSG-B2-g4X"/>
                     </connections>
@@ -666,6 +678,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
