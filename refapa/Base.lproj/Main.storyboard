@@ -203,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-ET-IDr">
-                                <rect key="frame" x="20" y="125" width="335" height="422"/>
+                                <rect key="frame" x="20" y="109" width="335" height="438"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="orp-4A-oh9">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="21"/>
@@ -266,6 +266,7 @@
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="Twp-Cm-3kl" secondAttribute="trailing" constant="75" id="a3e-9q-Cc4"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="ewg-ET-IDr" secondAttribute="trailing" constant="20" id="ecZ-XW-Mkp"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="fKs-Qc-oKq"/>
+                            <constraint firstItem="ewg-ET-IDr" firstAttribute="top" secondItem="NoZ-bp-tLo" secondAttribute="bottom" constant="20" id="fly-PI-EI4"/>
                             <constraint firstItem="QUP-fa-sox" firstAttribute="top" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="10" id="lHL-xW-e6g"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="120" id="laQ-b0-gzg"/>
                             <constraint firstItem="Twp-Cm-3kl" firstAttribute="top" secondItem="QUP-fa-sox" secondAttribute="bottom" constant="10" id="om8-kj-COH"/>
@@ -273,6 +274,11 @@
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="qRe-Le-Auv"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="zWw-dC-zv8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4JG-KS-EhW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Autor" id="TM8-gM-PGG">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="oNe-l5-5Ng"/>

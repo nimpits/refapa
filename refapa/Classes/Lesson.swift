@@ -9,7 +9,7 @@ import UIKit
 
 class Lesson: NSObject {
     let lessonName : String
-    let completed : Bool // if quiz == 100 completed = true
+    var completed : Bool // if quiz == 100 completed = true
     let lessonStructure: LessonStructure
     var lessonDescription = [ImageWithDescription]()
     let lessonExample : Example

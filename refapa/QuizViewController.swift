@@ -45,7 +45,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             nextButton.setTitle("Back to main page", for: .normal)
             
             
-            lesson.completed == true
+            lesson.completed = true
             return 0
             
         }
@@ -112,6 +112,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //give poitns to the user
         }else {
             correct = false
+           
         }
     }
         
@@ -119,10 +120,18 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
      @IBAction func checkCorrect(_ sender: UIButton) {
+        
+        if (lesson.completed == true){
+            navigationController?.popToViewController((navigationController?.viewControllers[0])!, animated: true)
+            
+        }
       
         
         if (correct == true){
             tableView.reloadData()
+        }
+        else {
+            lblCongrats.text = "Incorrect"
         }
         
      }
