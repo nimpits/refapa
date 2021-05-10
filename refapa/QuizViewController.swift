@@ -49,7 +49,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if question.isAnswered == true {
             return true
         }
-    return false
+        return false
     }
     
     /*
@@ -63,17 +63,6 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         
-      /*  let a = lesson.lessonQuiz.questions.count
-        
-        for i in 1...a {
-            
-            if let answer = lesson.lessonQuiz.questions[indexPath.row] {
-                
-            }
-            
-        }*/
-        
-        
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         let question = lesson.lessonQuiz.questions[lastAnswered]
         let questionAnswer = question.questionAnswer[indexPath.row].answerText //should we delete this?
@@ -82,6 +71,16 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.textLabel?.text = questionAnswer
     
         return cell
+        
+        /*  let a = lesson.lessonQuiz.questions.count
+          
+          for i in 1...a {
+              
+              if let answer = lesson.lessonQuiz.questions[indexPath.row] {
+                  
+              }
+              
+          }*/
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -89,8 +88,10 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let toCheck = lesson.lessonQuiz.questions[lastAnswered].questionAnswer[indexPath.row].isCorrect
         
         if(toCheck){
+            print("Answer is correct!")
             lesson.lessonQuiz.lastQuestionAnswered += 1 //need to check if its the last question too
-            //give poitns to the user
+                //give poitns to the user
+                //move to next view
         }
     }
     
