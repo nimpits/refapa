@@ -229,5 +229,12 @@ class LessonsTableTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let DescriptionVC = segue.destination as! DescriptionViewController
+        DescriptionVC.lesson = lesson
+    }
 
 }

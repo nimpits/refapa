@@ -9,6 +9,8 @@ import UIKit
 
 class DescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var lesson: Lesson!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lesson.lessonDescription.count
     }
@@ -38,96 +40,6 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     
-    let lesson = Lesson.init(
-        lessonName: "Autor",
-        completed: false,
-        lessonStructure: LessonStructure.init(
-            examples: [
-                ImageWithDescription.init(
-                    imgDescription: "Lesson Structure Image 1 Description",
-                    imgFoto: UIImage.init(named: "dog1")
-                )
-            ]
-        ),
-        lessonDescription: [
-            ImageWithDescription.init(
-                imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
-                imgFoto: nil
-            ),
-            ImageWithDescription.init(
-                imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                imgFoto: UIImage.init(named: "dog1")
-            ),
-            ImageWithDescription.init(
-                imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                imgFoto: UIImage.init(named: "dog3")
-            )
-        ],
-        lessonExample: Example.init(
-            examples: [
-                ImageWithDescription.init(
-                    imgDescription: "Lesson Example Image Description",
-                    imgFoto: UIImage.init(named: "dog3")
-                )
-            ]
-        ),
-        lessonQuiz: Quiz.init(
-            grade: 0.0,
-            questions: [
-                Question.init(
-                    questionText: "Question text 1",
-                    points: 10,
-                    questionImage: ImageWithDescription.init(
-                        imgDescription: "Image description",
-                        imgFoto: UIImage.init(named: "dog4")
-                        
-                    ),
-                    questionAnswer: [
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer1"
-                    ),
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer2"
-                    ),
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer3"
-                    ),
-                        Answer.init(
-                        isCorrect: true, answerText: "Correct"
-                    )
-                    ],
-                    isAnswered : false
-                    
-                ),
-                Question.init(
-                    questionText: "Question text 2",
-                    points: 10,
-                    questionImage: ImageWithDescription.init(
-                        imgDescription: "Image description",
-                        imgFoto: UIImage.init(named: "dog4")
-                        
-                    ),
-                    questionAnswer: [
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer1"
-                    ),
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer2"
-                    ),
-                        Answer.init(
-                        isCorrect: true, answerText: " Correct"
-                    ),
-                        Answer.init(
-                        isCorrect: false, answerText: "Answer4"
-                    )
-                    ],
-                    isAnswered : false
-                    
-                )
-                
-            ]
-        )
-    )
     
     @IBOutlet weak var tableView: UITableView!
     

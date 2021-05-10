@@ -111,6 +111,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //need to check if its the last question too
             //give poitns to the user
         }else {
+            lesson.lessonQuiz.lastQuestionAnswered = lastAnswered
             correct = false
            
         }
