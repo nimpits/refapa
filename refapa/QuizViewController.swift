@@ -12,8 +12,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var lbTituloCelda: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
-    
     @IBOutlet weak var lblCongrats: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     var lesson: Lesson!
     var correct : Bool!
@@ -21,7 +21,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.backgroundColor = UIColor.blue
-        
+        imageView.
         // Do any additional setup after loading the view.
     }
     

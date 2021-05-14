@@ -203,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-ET-IDr">
-                                <rect key="frame" x="20" y="109" width="335" height="438"/>
+                                <rect key="frame" x="20" y="229" width="335" height="348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="orp-4A-oh9">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="21"/>
@@ -234,7 +234,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twp-Cm-3kl">
-                                <rect key="frame" x="75" y="567" width="225" height="35"/>
+                                <rect key="frame" x="75" y="600" width="225" height="35"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="Check">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -247,11 +247,15 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUP-fa-sox">
-                                <rect key="frame" x="20" y="557" width="335" height="0.0"/>
+                                <rect key="frame" x="20" y="587" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJo-iG-9qu">
+                                <rect key="frame" x="66" y="93" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Efx-dB-b4p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -262,14 +266,14 @@
                             <constraint firstItem="NoZ-bp-tLo" firstAttribute="top" secondItem="Efx-dB-b4p" secondAttribute="top" constant="16" id="GCl-1q-k1O"/>
                             <constraint firstItem="QUP-fa-sox" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" constant="20" id="K8e-oa-IVV"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="QUP-fa-sox" secondAttribute="trailing" constant="20" id="MDl-nL-Vax"/>
+                            <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="Twp-Cm-3kl" secondAttribute="bottom" constant="32" id="NIG-jf-aOS"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="leading" secondItem="Efx-dB-b4p" secondAttribute="leading" constant="20" id="ZwR-Dx-54n"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="Twp-Cm-3kl" secondAttribute="trailing" constant="75" id="a3e-9q-Cc4"/>
                             <constraint firstItem="Efx-dB-b4p" firstAttribute="trailing" secondItem="ewg-ET-IDr" secondAttribute="trailing" constant="20" id="ecZ-XW-Mkp"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="fKs-Qc-oKq"/>
-                            <constraint firstItem="ewg-ET-IDr" firstAttribute="top" secondItem="NoZ-bp-tLo" secondAttribute="bottom" constant="20" id="fly-PI-EI4"/>
+                            <constraint firstItem="ewg-ET-IDr" firstAttribute="top" secondItem="NoZ-bp-tLo" secondAttribute="bottom" constant="140" id="fly-PI-EI4"/>
                             <constraint firstItem="QUP-fa-sox" firstAttribute="top" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="10" id="lHL-xW-e6g"/>
-                            <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="120" id="laQ-b0-gzg"/>
-                            <constraint firstItem="Twp-Cm-3kl" firstAttribute="top" secondItem="QUP-fa-sox" secondAttribute="bottom" constant="10" id="om8-kj-COH"/>
+                            <constraint firstItem="Efx-dB-b4p" firstAttribute="bottom" secondItem="ewg-ET-IDr" secondAttribute="bottom" constant="90" id="laQ-b0-gzg"/>
                             <constraint firstItem="NoZ-bp-tLo" firstAttribute="trailing" secondItem="Efx-dB-b4p" secondAttribute="trailing" id="p7k-ju-9gr"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="qRe-Le-Auv"/>
                             <constraint firstItem="ewg-ET-IDr" firstAttribute="centerX" secondItem="r05-EB-0H9" secondAttribute="centerX" id="zWw-dC-zv8"/>
@@ -284,6 +288,7 @@
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="oNe-l5-5Ng"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="HJo-iG-9qu" id="NFN-St-fQw"/>
                         <outlet property="lbTituloCelda" destination="orp-4A-oh9" id="Few-ee-csO"/>
                         <outlet property="lblCongrats" destination="QUP-fa-sox" id="Gmg-zo-SPE"/>
                         <outlet property="nextButton" destination="Twp-Cm-3kl" id="ZKC-fs-RjL"/>
