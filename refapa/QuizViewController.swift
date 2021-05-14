@@ -116,25 +116,20 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
            
         }
     }
-        
-    
     
     
      @IBAction func checkCorrect(_ sender: UIButton) {
         
         if (lesson.completed == true){
             navigationController?.popToViewController((navigationController?.viewControllers[0])!, animated: true)
-            
         }
       
         
         if (correct == true){
             tableView.reloadData()
-        }
-        else {
+        }else {
             lblCongrats.text = "Incorrect"
         }
-        
      }
     
     /*
