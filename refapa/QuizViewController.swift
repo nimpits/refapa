@@ -9,9 +9,6 @@ import UIKit
 
 class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
-    
-
     @IBOutlet weak var lbTituloCelda: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
@@ -21,36 +18,22 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var lesson: Lesson!
     var correct : Bool!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.backgroundColor = UIColor.blue
         
         // Do any additional setup after loading the view.
-        
     }
     
-
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
-        
-        
         if (lastAnswered == lesson.lessonQuiz.questions.count){
-            
             lblCongrats.text = " Congratulations! You passed the quiz "
             nextButton.setTitle("Back to main page", for: .normal)
-            
-            
             lesson.completed = true
             return 0
-            
-        }
-        else{
-        return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
+        }else{
+            return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
         }
     }
     
