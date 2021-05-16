@@ -21,7 +21,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.backgroundColor = UIColor.blue
-        imageView.
+        imageView.image = lesson.lessonStructure.examples[0].imgFoto
         // Do any additional setup after loading the view.
     }
     
