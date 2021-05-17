@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol protocoloTopicIndex {
+    func setIndex(index: Int)
+}
+
 class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var topicList : [Topic]!
+    var delegado : protocoloTopicIndex!
+    var tableMain : SectionViewController!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,7 +57,9 @@ class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print(topicList[indexPath.row].topicName)
+        print(indexPath.row)
+        delegado.setIndex(index: indexPath.row)
+        tableMain.performSegue(withIdentifier: "TopicToLesson", sender: indexPath.row)
     }
 
 }

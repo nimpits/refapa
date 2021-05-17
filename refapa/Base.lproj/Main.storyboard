@@ -112,7 +112,7 @@
                                                                 <outlet property="imgFoto" destination="5At-7S-okl" id="b4H-7g-hHy"/>
                                                                 <outlet property="lbCompletion" destination="N0H-M3-yMG" id="N0E-GW-Eac"/>
                                                                 <outlet property="lbTitle" destination="qLA-mg-daX" id="Nbf-ND-El2"/>
-                                                                <segue destination="NcF-bT-iRc" kind="show" id="sj2-Nh-Kyw"/>
+                                                                <segue destination="NcF-bT-iRc" kind="show" identifier="TopicToLesson" id="sj2-Nh-Kyw"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>

@@ -7,11 +7,12 @@
 
 import UIKit
 
-class SectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+class SectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, protocoloTopicIndex {
+    
     @IBOutlet weak var lbAppTitle: UILabel!
     var sectionTopicList = [Topic]()
     var sectionList = [Section]()
+    var segueIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,8 @@ class SectionViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.lbTitle.text = sectionList[indexPath.row].sectionName
         cell.topicList = sectionList[indexPath.row].topics
+        cell.delegado = self
+        cell.tableMain = self
         
         return cell
     }
@@ -48,21 +51,16 @@ class SectionViewController: UIViewController, UITableViewDataSource, UITableVie
         return CGFloat((sectionList[indexPath.row].topics.count / 2) * 180)
     }
     
-
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-   
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        
-//        let LessonsTableVC = segue.destination as! LessonsTableTableViewController
-//        LessonsTableVC.topicName = sectionTopicList[tableView.indexPathForSelectedRow!.row].topicName
-//        collectionView.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
     }
-  
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // SI ES AQUI
+        print("Segue ya se la saben " + String(segueIndex))
+    }
+    
+    func setIndex(index: Int) {
+        segueIndex = index
+    }
 }
