@@ -52,13 +52,9 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return false
     }
     
-    /*
-    func isAnswered (question : Question)-> Bool{
-        return false
-    }
- */
+
     
-    
+    //TODO fix font size because label keeps overflowing
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
@@ -71,16 +67,6 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.textLabel?.text = questionAnswer
     
         return cell
-        
-        /*  let a = lesson.lessonQuiz.questions.count
-          
-          for i in 1...a {
-              
-              if let answer = lesson.lessonQuiz.questions[indexPath.row] {
-                  
-              }
-              
-          }*/
     }
     
     
