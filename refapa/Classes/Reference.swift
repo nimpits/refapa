@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Reference: NSObject {
+class Reference: NSObject, Codable {
     let referenceName : String
     let priority : Int
     var sections : [Section]!
