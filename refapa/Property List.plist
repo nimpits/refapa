@@ -160,7 +160,8 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.</string>
+												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
+</string>
 												<key>imgFoto</key>
 												<string>La casa de papel</string>
 											</dict>
@@ -240,7 +241,8 @@
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
+											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
+Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -2401,7 +2403,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Autor de la entrada del Blog</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2492,7 +2494,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Serie de televisión</string>
+									<string>Autor de un Comentario del Blog (Nombre)</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2584,7 +2586,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Autor de un Comentario del Blog (Nombre de Usuario)</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2680,7 +2682,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<key>topicName</key>
 							<string>Fecha</string>
 							<key>topicDescription</key>
-							<string>Fecha</string>
+							<string>A veces es necesario hacer la cita del comentario de un blog, es importante poder hacer esta correctamente usando el formato APA, y aquí veremos como.</string>
 							<key>imgFoto</key>
 							<string>FechaConsulta</string>
 							<key>priority</key>
@@ -2691,7 +2693,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Comentario con Nombre de Usuario</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2700,7 +2702,8 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Proporcione el título del comentario, ó hasta las primeras 20 palabras del mismo. Luego escriba &quot;Comentario en la entrada&quot; y el título COMPLETO de la publicación en la que apareció el comentario, entre comillas y toda la oración en corchetes.
+</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -2710,7 +2713,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>En este caso, se usa el nombre de la persona que escribió el comentario, para poder darle credito por su publicación.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -2721,9 +2724,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string>AlvaroH. (2 de febrero 2020). Claro que no pueden ser todos culpa de Uribe, pero no es mera coincidencia que los uribistas suelen ser quienes [Comentario en la entrada “El paro sigue, la culpa de Duque y el uribismo es eterna”]. La Silla Vacía. https://lasillavacia.com/blogs/latoneria-y-pintura/paro-sigue-culpa-duque-y-uribismo-eterna-75381</string>
 												<key>imgFoto</key>
-												<string>cruella</string>
+												<string>blogComentarioNombreDeUsuario</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
