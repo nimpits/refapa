@@ -4,20 +4,20 @@
 <dict>
 	<key>title</key>
 	<string>Refappa</string>
-	<key>description</key>
-	<string></string>
-	<key>reference</key>
+	<key>appDescription</key>
+	<string>Aplicación para aprender a referenciar</string>
+	<key>references</key>
 	<array>
 		<dict>
 			<key>referenceName</key>
-			<string></string>
+			<string>Película</string>
 			<key>priority</key>
 			<integer>0</integer>
 			<key>sections</key>
 			<array>
 				<dict>
 					<key>sectionName</key>
-					<string></string>
+					<string>Section Name</string>
 					<key>priority</key>
 					<integer>0</integer>
 					<key>completion</key>
@@ -26,11 +26,11 @@
 					<array>
 						<dict>
 							<key>topicName</key>
-							<string></string>
+							<string>Autor</string>
 							<key>topicDescription</key>
-							<string></string>
+							<string>Autor</string>
 							<key>imgFoto</key>
-							<string></string>
+							<string>Autor</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -39,7 +39,7 @@
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string></string>
+									<string>Director</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -48,9 +48,9 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string></string>
+												<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
 												<key>imgFoto</key>
-												<string></string>
+												<string>Autor</string>
 											</dict>
 										</array>
 									</dict>
@@ -58,9 +58,9 @@
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string></string>
+											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
 											<key>imgFoto</key>
-											<string></string>
+											<string>Autor</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -69,9 +69,9 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string></string>
+												<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
 												<key>imgFoto</key>
-												<string></string>
+												<string>Autor</string>
 											</dict>
 										</array>
 									</dict>
@@ -83,18 +83,23 @@
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string></string>
+												<string>¿Qué sucede si la película tiene más de una estudio de producción?</string>
 												<key>points</key>
-												<integer>0</integer>
+												<integer>5</integer>
 												<key>questionImage</key>
-												<string></string>
+												<dict>
+													<key>imgDescription</key>
+													<string>Autor</string>
+													<key>imgFoto</key>
+													<string>Autor</string>
+												</dict>
 												<key>questionAnswer</key>
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<false/>
+														<true/>
 														<key>answerText</key>
-														<string></string>
+														<string>Puedes separarlas por punto y coma</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -111,7 +116,7 @@
 				</dict>
 			</array>
 			<key>referenceImage</key>
-			<string></string>
+			<string>movie</string>
 		</dict>
 	</array>
 </dict>

@@ -15,219 +15,231 @@ class ReferenceTableViewController: UITableViewController {
         super.viewDidLoad()
         title = "Refappa"
 
-        let lesson = Lesson.init(
-            lessonName: "Autor Tradicional",
-            completed: true,
-            lessonStructure: LessonStructure.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: "dog1"
-                    )
-                ]
-            ),
-            lessonDescription: [
-                ImageWithDescription.init(
-                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
-                    imgFoto: nil
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: "dog1"
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: "dog3"
-                )
-            ],
-            lessonExample: Example.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Example Image Description",
-                        imgFoto: "dog3"
-                    )
-                ]
-            ),
-            lessonQuiz: Quiz.init(
-                grade: 0.0,
-                questions: [
-                    Question.init(
-                        questionText: "Question text 1",
-                        points: 10,
-                        questionImage: ImageWithDescription.init(
-                            imgDescription: "Image description",
-                            imgFoto: "dog4"
-                            
-                        ),
-                        questionAnswer: [
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer1"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer2"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer3"
-                        ),
-                            Answer.init(
-                            isCorrect: true, answerText: "Correct"
-                        )
-                        ],
-                        isAnswered : false
-                        
-                    )
-                ]
-            )
-        )
+//        let lesson = Lesson.init(
+//            lessonName: "Autor Tradicional",
+//            completed: true,
+//            lessonStructure: LessonStructure.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Structure Image 1 Description",
+//                        imgFoto: "dog1"
+//                    )
+//                ]
+//            ),
+//            lessonDescription: [
+//                ImageWithDescription.init(
+//                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
+//                    imgFoto: nil
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
+//                    imgFoto: "dog1"
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
+//                    imgFoto: "dog3"
+//                )
+//            ],
+//            lessonExample: Example.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Example Image Description",
+//                        imgFoto: "dog3"
+//                    )
+//                ]
+//            ),
+//            lessonQuiz: Quiz.init(
+//                grade: 0.0,
+//                questions: [
+//                    Question.init(
+//                        questionText: "Question text 1",
+//                        points: 10,
+//                        questionImage: ImageWithDescription.init(
+//                            imgDescription: "Image description",
+//                            imgFoto: "dog4"
+//
+//                        ),
+//                        questionAnswer: [
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer1"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer2"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer3"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: true, answerText: "Correct"
+//                        )
+//                        ],
+//                        isAnswered : false
+//
+//                    )
+//                ]
+//            )
+//        )
+//
+//        let lesson2 = Lesson.init(
+//            lessonName: "Autor Anónimo",
+//            completed: true,
+//            lessonStructure: LessonStructure.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Structure Image 1 Description",
+//                        imgFoto: "dog1"
+//                    )
+//                ]
+//            ),
+//            lessonDescription: [
+//                ImageWithDescription.init(
+//                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
+//                    imgFoto: nil
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
+//                    imgFoto: "dog1"
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
+//                    imgFoto: "dog3"
+//                )
+//            ],
+//            lessonExample: Example.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Example Image Description",
+//                        imgFoto: "dog3"
+//                    )
+//                ]
+//            ),
+//            lessonQuiz: Quiz.init(
+//                grade: 0.0,
+//                questions: [
+//                    Question.init(
+//                        questionText: "Question text 1",
+//                        points: 10,
+//                        questionImage: ImageWithDescription.init(
+//                            imgDescription: "Image description",
+//                            imgFoto: "dog4"
+//
+//                        ),
+//                        questionAnswer: [
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer1"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer2"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer3"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: true, answerText: "Correct"
+//                        )
+//                        ],
+//                        isAnswered : false
+//
+//                    )
+//                ]
+//            )
+//        )
+//
+//        let lesson3 = Lesson.init(
+//            lessonName: "Nombre de usuario",
+//            completed: false,
+//            lessonStructure: LessonStructure.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Structure Image 1 Description",
+//                        imgFoto: "dog1"
+//                    )
+//                ]
+//            ),
+//            lessonDescription: [
+//                ImageWithDescription.init(
+//                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
+//                    imgFoto: nil
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
+//                    imgFoto: "dog1"
+//                ),
+//                ImageWithDescription.init(
+//                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
+//                    imgFoto: "dog3"
+//                )
+//            ],
+//            lessonExample: Example.init(
+//                examples: [
+//                    ImageWithDescription.init(
+//                        imgDescription: "Lesson Example Image Description",
+//                        imgFoto: "dog3"
+//                    )
+//                ]
+//            ),
+//            lessonQuiz: Quiz.init(
+//                grade: 0.0,
+//                questions: [
+//                    Question.init(
+//                        questionText: "Question text 1",
+//                        points: 10,
+//                        questionImage: ImageWithDescription.init(
+//                            imgDescription: "Image description",
+//                            imgFoto: "dog4"
+//
+//                        ),
+//                        questionAnswer: [
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer1"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer2"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: false, answerText: "Answer3"
+//                        ),
+//                            Answer.init(
+//                            isCorrect: true, answerText: "Correct"
+//                        )
+//                        ],
+//                        isAnswered : false
+//
+//                    )
+//                ]
+//            )
+//        )
+//
+//        let sectionTopicList = [
+//            Topic(topicName: "Autor", topicDescription: "Autor", imgFoto: "Autor", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
+//            Topic(topicName: "Fecha de consulta", topicDescription: "Fecha de consulta", imgFoto: "FechaConsulta", priority: 1, completion: 0, lessons: [lesson, lesson2, lesson3]),
+//            Topic(topicName: "Fuente de Consulta", topicDescription: "Consulta", imgFoto: "FuenteConsulta", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
+//            Topic(topicName: "Paginas", topicDescription: "Paginas", imgFoto: "Paginas", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3])
+//        ]
+//
+//        let sectionList = [
+//            Section(sectionName: "Partes de la referencia", priority: 0, completion: 0, topics: sectionTopicList),
+//            Section(sectionName: "Tipos de referencia", priority: 0, completion: 0, topics: sectionTopicList)
+//        ]
         
-        let lesson2 = Lesson.init(
-            lessonName: "Autor Anónimo",
-            completed: true,
-            lessonStructure: LessonStructure.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: "dog1"
-                    )
-                ]
-            ),
-            lessonDescription: [
-                ImageWithDescription.init(
-                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
-                    imgFoto: nil
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: "dog1"
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: "dog3"
-                )
-            ],
-            lessonExample: Example.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Example Image Description",
-                        imgFoto: "dog3"
-                    )
-                ]
-            ),
-            lessonQuiz: Quiz.init(
-                grade: 0.0,
-                questions: [
-                    Question.init(
-                        questionText: "Question text 1",
-                        points: 10,
-                        questionImage: ImageWithDescription.init(
-                            imgDescription: "Image description",
-                            imgFoto: "dog4"
-                            
-                        ),
-                        questionAnswer: [
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer1"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer2"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer3"
-                        ),
-                            Answer.init(
-                            isCorrect: true, answerText: "Correct"
-                        )
-                        ],
-                        isAnswered : false
-                        
-                    )
-                ]
-            )
-        )
+        let ruta = Bundle.main.path(forResource: "Property List", ofType: "plist")
         
-        let lesson3 = Lesson.init(
-            lessonName: "Nombre de usuario",
-            completed: false,
-            lessonStructure: LessonStructure.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: "dog1"
-                    )
-                ]
-            ),
-            lessonDescription: [
-                ImageWithDescription.init(
-                    imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
-                    imgFoto: nil
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: "dog1"
-                ),
-                ImageWithDescription.init(
-                    imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: "dog3"
-                )
-            ],
-            lessonExample: Example.init(
-                examples: [
-                    ImageWithDescription.init(
-                        imgDescription: "Lesson Example Image Description",
-                        imgFoto: "dog3"
-                    )
-                ]
-            ),
-            lessonQuiz: Quiz.init(
-                grade: 0.0,
-                questions: [
-                    Question.init(
-                        questionText: "Question text 1",
-                        points: 10,
-                        questionImage: ImageWithDescription.init(
-                            imgDescription: "Image description",
-                            imgFoto: "dog4"
-                            
-                        ),
-                        questionAnswer: [
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer1"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer2"
-                        ),
-                            Answer.init(
-                            isCorrect: false, answerText: "Answer3"
-                        ),
-                            Answer.init(
-                            isCorrect: true, answerText: "Correct"
-                        )
-                        ],
-                        isAnswered : false
-                        
-                    )
-                ]
-            )
-        )
-
-        let sectionTopicList = [
-            Topic(topicName: "Autor", topicDescription: "Autor", imgFoto: "Autor", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Fecha de consulta", topicDescription: "Fecha de consulta", imgFoto: "FechaConsulta", priority: 1, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Fuente de Consulta", topicDescription: "Consulta", imgFoto: "FuenteConsulta", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Paginas", topicDescription: "Paginas", imgFoto: "Paginas", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3])
-        ]
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta!))
+            let mainApp = try PropertyListDecoder().decode(MainApp.self, from: data)
+            referenceList = mainApp.references
+        }
+        catch {
+            print(error)
+            print("Error al cargar el archivo")
+        }
         
-        let sectionList = [
-            Section(sectionName: "Partes de la referencia", priority: 0, completion: 0, topics: sectionTopicList),
-            Section(sectionName: "Tipos de referencia", priority: 0, completion: 0, topics: sectionTopicList)
-        ]
-        
-        referenceList = [
-            Reference(referenceName: "Película", priority: 0, sections: sectionList, referenceImage: "movie"),
-            Reference(referenceName: "Canción", priority: 1, sections: sectionList, referenceImage: "song"),
-            Reference(referenceName: "Post de blog", priority: 2, sections: sectionList, referenceImage: "blog"),
-            Reference(referenceName: "Youtube", priority: 3, sections: sectionList, referenceImage: "youtube"),
-        ]
+//        referenceList = [
+//            Reference(referenceName: "Película", priority: 0, sections: sectionList, referenceImage: "movie"),
+//            Reference(referenceName: "Canción", priority: 1, sections: sectionList, referenceImage: "song"),
+//            Reference(referenceName: "Post de blog", priority: 2, sections: sectionList, referenceImage: "blog"),
+//            Reference(referenceName: "Youtube", priority: 3, sections: sectionList, referenceImage: "youtube"),
+//        ]
     }
 
     // MARK: - Table view data source

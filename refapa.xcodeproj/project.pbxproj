@@ -32,6 +32,7 @@
 		435FC75F262E6E850061C6EC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75E262E6E850061C6EC /* ExampleViewController.swift */; };
 		435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC761262E6EA50061C6EC /* StructureViewController.swift */; };
 		43FB0994265248AC00BE0521 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43FB0993265248AC00BE0521 /* Property List.plist */; };
+		43FB09982652565100BE0521 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB09972652565100BE0521 /* MainApp.swift */; };
 		AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */; };
 		AE94C41026524FE9006E2C5F /* AppInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE94C40F26524FE9006E2C5F /* AppInformation.plist */; };
 		AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC56E652637939D002344BD /* Storyboard2.storyboard */; };
@@ -67,6 +68,7 @@
 		435FC75E262E6E850061C6EC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ViewControllers/ExampleViewController.swift; sourceTree = "<group>"; };
 		435FC761262E6EA50061C6EC /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructureViewController.swift; path = ViewControllers/StructureViewController.swift; sourceTree = "<group>"; };
 		43FB0993265248AC00BE0521 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		43FB09972652565100BE0521 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE94C40F26524FE9006E2C5F /* AppInformation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppInformation.plist; sourceTree = "<group>"; };
 		AEC56E652637939D002344BD /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3C1B88BC262C0F620041D0F2 /* Question.swift */,
 				3C1B88BF262C0FB50041D0F2 /* Answer.swift */,
 				3CD4C840265239F0006AED46 /* Reference.swift */,
+				43FB09972652565100BE0521 /* MainApp.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				3C1B88B0262C0F150041D0F2 /* ImageWithDescription.swift in Sources */,
 				3C1B8892262C0DB50041D0F2 /* ViewController.swift in Sources */,
+				43FB09982652565100BE0521 /* MainApp.swift in Sources */,
 				435FC75C262E6E310061C6EC /* DescriptionViewController.swift in Sources */,
 				3C1B88AD262C0EE00041D0F2 /* Example.swift in Sources */,
 				3C1B88C0262C0FB50041D0F2 /* Answer.swift in Sources */,
