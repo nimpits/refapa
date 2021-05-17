@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class SectionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,8 +15,8 @@ class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionView.dataSource = self
-        collectionView.delegate = self
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
 
@@ -51,7 +51,7 @@ class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print(topicList[indexPath.row].topicName)
+        
     }
 
 }
