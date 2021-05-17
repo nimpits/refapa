@@ -246,7 +246,7 @@ class ReferenceTableViewController: UITableViewController {
 
         cell.imageView?.image = referenceList[indexPath.row].referenceImage!
         cell.textLabel?.text = referenceList[indexPath.row].referenceName
-
+        cell.textLabel?.font = UIFont(name: "Arial", size: 20)
         return cell
     }
     
