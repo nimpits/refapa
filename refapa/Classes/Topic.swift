@@ -7,20 +7,24 @@
 
 import UIKit
 
-class Topic: NSObject {
+class Topic: NSObject, Codable {
     let topicName : String
     let topicDescription: String
-    let imgFoto : UIImage!
+    let imgFoto : String
     let priority: Int
     var completion : Int // calculated on the go
     var lessons = [Lesson]()
     
-    init(topicName: String, topicDescription: String, imgFoto: UIImage!, priority: Int, completion: Int, lessons: [Lesson]) {
+    init(topicName: String, topicDescription: String, imgFoto: String, priority: Int, completion: Int, lessons: [Lesson]) {
         self.topicName = topicName
         self.topicDescription = topicDescription
         self.imgFoto = imgFoto
         self.priority = priority
         self.completion = completion
         self.lessons = lessons
+    }
+    
+    func getImage() -> UIImage {
+        return UIImage(named: imgFoto)!
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LessonStructure: NSObject {
+class LessonStructure: NSObject, Codable {
     var examples = [ImageWithDescription]()
     
     init(examples : [ImageWithDescription]) {

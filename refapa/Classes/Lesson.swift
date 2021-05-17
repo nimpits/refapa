@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Lesson: NSObject {
+class Lesson: NSObject, Codable {
     let lessonName : String
     var completed : Bool // if quiz == 100 completed = true
     let lessonStructure: LessonStructure

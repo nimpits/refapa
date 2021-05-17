@@ -7,11 +7,11 @@
 
 import UIKit
 
-class Question: NSObject {
+class Question: NSObject, Codable {
     let questionText : String
     let points : Int
     let questionImage: ImageWithDescription
-    var questionAnswer = [Answer]()
+    var questionAnswer : [Answer]
     let isAnswered : Bool
     
     init(questionText: String, points: Int, questionImage : ImageWithDescription, questionAnswer: [Answer], isAnswered : Bool) {
