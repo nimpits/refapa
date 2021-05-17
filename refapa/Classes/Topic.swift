@@ -10,12 +10,12 @@ import UIKit
 class Topic: NSObject, Codable {
     let topicName : String
     let topicDescription: String
-    let imgFoto : String
+    let imgFoto : String?
     let priority: Int
     var completion : Int // calculated on the go
-    var lessons = [Lesson]()
+    var lessons : [Lesson]
     
-    init(topicName: String, topicDescription: String, imgFoto: String, priority: Int, completion: Int, lessons: [Lesson]) {
+    init(topicName: String, topicDescription: String, imgFoto: String?, priority: Int, completion: Int, lessons: [Lesson]) {
         self.topicName = topicName
         self.topicDescription = topicDescription
         self.imgFoto = imgFoto
@@ -24,7 +24,10 @@ class Topic: NSObject, Codable {
         self.lessons = lessons
     }
     
-    func getImage() -> UIImage {
-        return UIImage(named: imgFoto)!
+    func getImage() -> UIImage? {
+        if let img = UIImage(named: imgFoto!) {
+            return img
+        }
+        return nil
     }
 }

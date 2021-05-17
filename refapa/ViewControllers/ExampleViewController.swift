@@ -18,7 +18,7 @@ class ExampleViewController: UIViewController, UITableViewDataSource, UITableVie
 
         let imgWithDesc = lesson.lessonExample.examples[indexPath.row]
         
-        if let foto = imgWithDesc.imgFoto {
+        if let foto = imgWithDesc.getImage() {
             cell.setCustomImage(image: foto)
         } else {
             cell.setCustomImage(image: UIImage(named: "1x1")!)

@@ -34,7 +34,7 @@ class SectionTableViewCell: UITableViewCell {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopicCollectionViewCell", for: indexPath) as! TopicCollectionViewCell
         
-        cell.imgFoto.image = topicList[indexPath.row].imgFoto
+        cell.imgFoto.image = topicList[indexPath.row].getImage()
         cell.lbTitle.text = topicList[indexPath.row].topicName
         cell.lbCompletion.text = String(topicList[indexPath.row].completion) + "% Completed"
         
