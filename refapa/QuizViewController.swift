@@ -20,7 +20,6 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.backgroundColor = UIColor.blue
         imageView.image = lesson.lessonStructure.examples[0].getImage()
         // Do any additional setup after loading the view.
     }
@@ -29,6 +28,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         if (lastAnswered == lesson.lessonQuiz.questions.count){
             lblCongrats.text = " Congratulations! You passed the quiz "
+            lblCongrats.textColor = UIColor.green
             nextButton.setTitle("Back to main page", for: .normal)
             lesson.completed = true
             return 0
@@ -111,7 +111,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if (correct == true){
             tableView.reloadData()
         }else {
-            lblCongrats.text = "Incorrect"
+            lblCongrats.text = "Respuesta incorrecta!"
+            lblCongrats.textColor = UIColor.red
         }
      }
     
