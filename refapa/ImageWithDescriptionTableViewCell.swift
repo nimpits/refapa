@@ -23,4 +23,31 @@ class ImageWithDescriptionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    internal var aspectConstraint : NSLayoutConstraint? {
+        didSet {
+            if oldValue != nil {
+                imgView.removeConstraint(oldValue!)
+            }
+            if aspectConstraint != nil {
+                imgView.addConstraint(aspectConstraint!)
+            }
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        aspectConstraint = nil
+    }
+    
+    func setCustomImage(image : UIImage) {
+        
+        let aspect = image.size.width / image.size.height
+        
+        let constraint = NSLayoutConstraint(item: imgView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: imgView, attribute: NSLayoutConstraint.Attribute.height, multiplier: aspect, constant: 0.0)
+        constraint.priority = UILayoutPriority(rawValue: 999)
+        
+        aspectConstraint = constraint
+        
+        imgView.image = image
+    }
 }

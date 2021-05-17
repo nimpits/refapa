@@ -21,9 +21,9 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
         let imgWithDesc = lesson.lessonDescription[indexPath.row]
         
         if let foto = imgWithDesc.imgFoto {
-            cell.imgView.image = foto
+            cell.setCustomImage(image: foto)
         } else {
-            cell.imgView.isHidden = true
+            cell.setCustomImage(image: UIImage(named: "1x1")!)
         }
         
         if let desc = imgWithDesc.imgDescription {
@@ -31,15 +31,9 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
         } else {
             cell.lbDescription.isHidden = true
         }
-
+        
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 324
-    }
-    
-    
     
     @IBOutlet weak var tableView: UITableView!
     

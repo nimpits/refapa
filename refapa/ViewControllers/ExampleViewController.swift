@@ -17,14 +17,20 @@ class ExampleViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! ImageWithDescriptionTableViewCell
 
         let imgWithDesc = lesson.lessonExample.examples[indexPath.row]
-        cell.imgView.image = imgWithDesc.imgFoto
-        cell.lbDescription.text = imgWithDesc.imgDescription
-
+        
+        if let foto = imgWithDesc.imgFoto {
+            cell.setCustomImage(image: foto)
+        } else {
+            cell.setCustomImage(image: UIImage(named: "1x1")!)
+        }
+        
+        if let desc = imgWithDesc.imgDescription {
+            cell.lbDescription.text = desc
+        } else {
+            cell.lbDescription.isHidden = true
+        }
+        
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 324
     }
     
     var lesson: Lesson!
