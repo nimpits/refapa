@@ -51,7 +51,7 @@ class SectionTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(topicList[indexPath.row].topicName)
+//        print(topicList[indexPath.row].topicName)
     }
 
 }
