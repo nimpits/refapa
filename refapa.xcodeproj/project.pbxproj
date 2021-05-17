@@ -26,6 +26,7 @@
 		3C1EF086263FE96F0047468F /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EF085263FE96F0047468F /* SectionTableViewCell.swift */; };
 		3C1EF089263FE9810047468F /* TopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EF088263FE9810047468F /* TopicCollectionViewCell.swift */; };
 		3CD4C841265239F0006AED46 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4C840265239F0006AED46 /* Reference.swift */; };
+		3CD4C84426523C1D006AED46 /* ReferenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4C84326523C1D006AED46 /* ReferenceTableViewController.swift */; };
 		4334B4352631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334B4342631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift */; };
 		435FC75C262E6E310061C6EC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75B262E6E310061C6EC /* DescriptionViewController.swift */; };
 		435FC75F262E6E850061C6EC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC75E262E6E850061C6EC /* ExampleViewController.swift */; };
@@ -58,6 +59,7 @@
 		3C1EF085263FE96F0047468F /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		3C1EF088263FE9810047468F /* TopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CD4C840265239F0006AED46 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		3CD4C84326523C1D006AED46 /* ReferenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewController.swift; sourceTree = "<group>"; };
 		4334B4342631177D00E2ADC5 /* ImageWithDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		435FC75B262E6E310061C6EC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = ViewControllers/DescriptionViewController.swift; sourceTree = "<group>"; };
 		435FC75E262E6E850061C6EC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ViewControllers/ExampleViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				3C1B888F262C0DB50041D0F2 /* SceneDelegate.swift */,
 				3C1B8891262C0DB50041D0F2 /* ViewController.swift */,
 				3C1B8893262C0DB50041D0F2 /* Main.storyboard */,
+				3CD4C84326523C1D006AED46 /* ReferenceTableViewController.swift */,
 				3C1EF07F263FE7190047468F /* SectionViewController.swift */,
 				BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */,
 				BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */,
@@ -224,6 +227,7 @@
 				3C1B88C0262C0FB50041D0F2 /* Answer.swift in Sources */,
 				3CD4C841265239F0006AED46 /* Reference.swift in Sources */,
 				3C1B88B7262C0F430041D0F2 /* LessonStructure.swift in Sources */,
+				3CD4C84426523C1D006AED46 /* ReferenceTableViewController.swift in Sources */,
 				3C1EF089263FE9810047468F /* TopicCollectionViewCell.swift in Sources */,
 				3C1EF080263FE7190047468F /* SectionViewController.swift in Sources */,
 				435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */,
