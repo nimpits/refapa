@@ -20,7 +20,7 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
 
         let imgWithDesc = lesson.lessonDescription[indexPath.row]
         
-        if let foto = imgWithDesc.imgFoto {
+        if let foto = imgWithDesc.getImage() {
             cell.setCustomImage(image: foto)
         } else {
             cell.setCustomImage(image: UIImage(named: "1x1")!)

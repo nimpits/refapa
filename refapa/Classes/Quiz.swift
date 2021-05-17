@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Quiz: NSObject {
+class Quiz: NSObject, Codable {
     let grade : Double
     var questions = [Question]()
     var lastQuestionAnswered : Int

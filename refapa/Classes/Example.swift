@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Example: NSObject {
+class Example: NSObject, Codable {
     var examples = [ImageWithDescription]()
     
     init(examples: [ImageWithDescription]) {

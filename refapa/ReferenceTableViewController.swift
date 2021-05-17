@@ -22,7 +22,7 @@ class ReferenceTableViewController: UITableViewController {
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: UIImage.init(named: "dog1")
+                        imgFoto: "dog1"
                     )
                 ]
             ),
@@ -33,18 +33,18 @@ class ReferenceTableViewController: UITableViewController {
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: UIImage.init(named: "dog1")
+                    imgFoto: "dog1"
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: UIImage.init(named: "dog3")
+                    imgFoto: "dog3"
                 )
             ],
             lessonExample: Example.init(
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Example Image Description",
-                        imgFoto: UIImage.init(named: "dog3")
+                        imgFoto: "dog3"
                     )
                 ]
             ),
@@ -56,7 +56,7 @@ class ReferenceTableViewController: UITableViewController {
                         points: 10,
                         questionImage: ImageWithDescription.init(
                             imgDescription: "Image description",
-                            imgFoto: UIImage.init(named: "dog4")
+                            imgFoto: "dog4"
                             
                         ),
                         questionAnswer: [
@@ -87,7 +87,7 @@ class ReferenceTableViewController: UITableViewController {
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: UIImage.init(named: "dog1")
+                        imgFoto: "dog1"
                     )
                 ]
             ),
@@ -98,18 +98,18 @@ class ReferenceTableViewController: UITableViewController {
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: UIImage.init(named: "dog1")
+                    imgFoto: "dog1"
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: UIImage.init(named: "dog3")
+                    imgFoto: "dog3"
                 )
             ],
             lessonExample: Example.init(
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Example Image Description",
-                        imgFoto: UIImage.init(named: "dog3")
+                        imgFoto: "dog3"
                     )
                 ]
             ),
@@ -121,7 +121,7 @@ class ReferenceTableViewController: UITableViewController {
                         points: 10,
                         questionImage: ImageWithDescription.init(
                             imgDescription: "Image description",
-                            imgFoto: UIImage.init(named: "dog4")
+                            imgFoto: "dog4"
                             
                         ),
                         questionAnswer: [
@@ -152,7 +152,7 @@ class ReferenceTableViewController: UITableViewController {
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Structure Image 1 Description",
-                        imgFoto: UIImage.init(named: "dog1")
+                        imgFoto: "dog1"
                     )
                 ]
             ),
@@ -163,18 +163,18 @@ class ReferenceTableViewController: UITableViewController {
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
-                    imgFoto: UIImage.init(named: "dog1")
+                    imgFoto: "dog1"
                 ),
                 ImageWithDescription.init(
                     imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
-                    imgFoto: UIImage.init(named: "dog3")
+                    imgFoto: "dog3"
                 )
             ],
             lessonExample: Example.init(
                 examples: [
                     ImageWithDescription.init(
                         imgDescription: "Lesson Example Image Description",
-                        imgFoto: UIImage.init(named: "dog3")
+                        imgFoto: "dog3"
                     )
                 ]
             ),
@@ -186,7 +186,7 @@ class ReferenceTableViewController: UITableViewController {
                         points: 10,
                         questionImage: ImageWithDescription.init(
                             imgDescription: "Image description",
-                            imgFoto: UIImage.init(named: "dog4")
+                            imgFoto: "dog4"
                             
                         ),
                         questionAnswer: [
@@ -211,10 +211,10 @@ class ReferenceTableViewController: UITableViewController {
         )
 
         let sectionTopicList = [
-            Topic(topicName: "Autor", topicDescription: "Autor", imgFoto: UIImage(named: "Autor"), priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Fecha de consulta", topicDescription: "Fecha de consulta", imgFoto: UIImage(named: "FechaConsulta"), priority: 1, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Fuente de Consulta", topicDescription: "Consulta", imgFoto: UIImage(named: "FuenteConsulta"), priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
-            Topic(topicName: "Paginas", topicDescription: "Paginas", imgFoto: UIImage(named: "Paginas"), priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3])
+            Topic(topicName: "Autor", topicDescription: "Autor", imgFoto: "Autor", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
+            Topic(topicName: "Fecha de consulta", topicDescription: "Fecha de consulta", imgFoto: "FechaConsulta", priority: 1, completion: 0, lessons: [lesson, lesson2, lesson3]),
+            Topic(topicName: "Fuente de Consulta", topicDescription: "Consulta", imgFoto: "FuenteConsulta", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3]),
+            Topic(topicName: "Paginas", topicDescription: "Paginas", imgFoto: "Paginas", priority: 0, completion: 0, lessons: [lesson, lesson2, lesson3])
         ]
         
         let sectionList = [
@@ -223,10 +223,10 @@ class ReferenceTableViewController: UITableViewController {
         ]
         
         referenceList = [
-            Reference(referenceName: "Película", priority: 0, sections: sectionList, referenceImage: UIImage(named: "movie")),
-            Reference(referenceName: "Canción", priority: 1, sections: sectionList, referenceImage: UIImage(named: "song")),
-            Reference(referenceName: "Post de blog", priority: 2, sections: sectionList, referenceImage: UIImage(named: "blog")),
-            Reference(referenceName: "Youtube", priority: 3, sections: sectionList, referenceImage: UIImage(named: "youtube")),
+            Reference(referenceName: "Película", priority: 0, sections: sectionList, referenceImage: "movie"),
+            Reference(referenceName: "Canción", priority: 1, sections: sectionList, referenceImage: "song"),
+            Reference(referenceName: "Post de blog", priority: 2, sections: sectionList, referenceImage: "blog"),
+            Reference(referenceName: "Youtube", priority: 3, sections: sectionList, referenceImage: "youtube"),
         ]
     }
 
@@ -244,7 +244,7 @@ class ReferenceTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaReferencia", for: indexPath)
 
-        cell.imageView?.image = referenceList[indexPath.row].referenceImage!
+        cell.imageView?.image = referenceList[indexPath.row].getImage()
         cell.textLabel?.text = referenceList[indexPath.row].referenceName
         cell.textLabel?.font = UIFont(name: "Arial", size: 20)
         return cell

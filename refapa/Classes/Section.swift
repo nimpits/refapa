@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Section: NSObject {
+class Section: NSObject, Codable {
     let sectionName : String
     let priority : Int
     let completion : Int // Calculated on the go

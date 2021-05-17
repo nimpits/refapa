@@ -33,6 +33,7 @@
 		435FC762262E6EA50061C6EC /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FC761262E6EA50061C6EC /* StructureViewController.swift */; };
 		43FB0994265248AC00BE0521 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43FB0993265248AC00BE0521 /* Property List.plist */; };
 		AE1C6A8826313FC300742B9A /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */; };
+		AE94C41026524FE9006E2C5F /* AppInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE94C40F26524FE9006E2C5F /* AppInformation.plist */; };
 		AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC56E652637939D002344BD /* Storyboard2.storyboard */; };
 		BC4E4AC026377AE3000138DC /* LessonsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */; };
 		BC9CE6CE263F57D500B2AF6A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */; };
@@ -67,6 +68,7 @@
 		435FC761262E6EA50061C6EC /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructureViewController.swift; path = ViewControllers/StructureViewController.swift; sourceTree = "<group>"; };
 		43FB0993265248AC00BE0521 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		AE1C6A8726313FC300742B9A /* LCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE94C40F26524FE9006E2C5F /* AppInformation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppInformation.plist; sourceTree = "<group>"; };
 		AEC56E652637939D002344BD /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 		BC4E4ABF26377AE3000138DC /* LessonsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableTableViewController.swift; sourceTree = "<group>"; };
 		BC9CE6CD263F57D500B2AF6A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				3C1B8896262C0DB70041D0F2 /* Assets.xcassets */,
 				3C1B8898262C0DB70041D0F2 /* LaunchScreen.storyboard */,
 				3C1B889B262C0DB70041D0F2 /* Info.plist */,
+				AE94C40F26524FE9006E2C5F /* AppInformation.plist */,
 			);
 			path = refapa;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				AEC56E662637939D002344BD /* Storyboard2.storyboard in Resources */,
 				3C1B889A262C0DB70041D0F2 /* LaunchScreen.storyboard in Resources */,
+				AE94C41026524FE9006E2C5F /* AppInformation.plist in Resources */,
 				3C1B8897262C0DB70041D0F2 /* Assets.xcassets in Resources */,
 				43FB0994265248AC00BE0521 /* Property List.plist in Resources */,
 				3C1B8895262C0DB50041D0F2 /* Main.storyboard in Resources */,

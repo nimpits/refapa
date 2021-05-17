@@ -64,7 +64,7 @@ class ViewController: UIViewController {
                 Topic(
                     topicName: "Autor",
                     topicDescription: "Aprende sobre el Autor en APA",
-                    imgFoto: UIImage(named: "Autor"),
+                    imgFoto: "Autor",
                     priority: 0,
                     completion: 0,
                     lessons: [Lesson(
@@ -74,21 +74,21 @@ class ViewController: UIViewController {
                             examples: [
                                 ImageWithDescription(
                                     imgDescription: "Aqui va una descripciond e la foto",
-                                    imgFoto: UIImage(named: "Autor")
+                                    imgFoto: "Autor"
                                 )
                             ]
                         ),
                         lessonDescription: [
                             ImageWithDescription(
                                 imgDescription: "Esta es la descripcion de como el autor funciona en APA",
-                                imgFoto: UIImage(named: "Autor")
+                                imgFoto: "Autor"
                             )
                         ],
                         lessonExample: Example(
                                 examples: [
                                     ImageWithDescription(
                                         imgDescription: "Descripcion 1",
-                                        imgFoto: UIImage(named: "AutorExample")
+                                        imgFoto: "AutorExample"
                                     )
                                 ]
                         ),

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Answer: NSObject, Codable{
+class Answer: NSObject, Codable {
     let isCorrect: Bool
     let answerText: String
     
