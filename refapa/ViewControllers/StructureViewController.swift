@@ -10,7 +10,7 @@ import UIKit
 class StructureViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lesson.lessonExample.examples.count
+        return lesson.lessonStructure.examples.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
