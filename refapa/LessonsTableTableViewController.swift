@@ -12,11 +12,13 @@ class LessonsTableTableViewController: UITableViewController {
     var lessonList = [Lesson]()
     
     var lessonListSelectedByUser: [Lesson]!
+    
+    var topicName: String = "Autor"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Lessons"
-        lessonList = [lesson, lesson2]
+        title = topicName
+        lessonList = [lesson, lesson2, lesson3]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,9 +43,14 @@ class LessonsTableTableViewController: UITableViewController {
 
         let lessonSelected = lessonList[indexPath.row]
         
+        var content = cell.defaultContentConfiguration()
+        content.text = lessonSelected.lessonName
+        
+        cell.contentConfiguration = content
         
         if lessonSelected.completed == true {
-            cell.contentView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
+//            cell.contentView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
+            cell.accessoryType = .checkmark
         }
         else{}
         
@@ -53,8 +60,8 @@ class LessonsTableTableViewController: UITableViewController {
     }
 
     let lesson = Lesson.init(
-        lessonName: "Autor",
-        completed: false,
+        lessonName: "Autor Tradicional",
+        completed: true,
         lessonStructure: LessonStructure.init(
             examples: [
                 ImageWithDescription.init(
@@ -118,8 +125,73 @@ class LessonsTableTableViewController: UITableViewController {
     )
     
     let lesson2 = Lesson.init(
-        lessonName: "Autor",
+        lessonName: "Autor Anónimo",
         completed: true,
+        lessonStructure: LessonStructure.init(
+            examples: [
+                ImageWithDescription.init(
+                    imgDescription: "Lesson Structure Image 1 Description",
+                    imgFoto: UIImage.init(named: "dog1")
+                )
+            ]
+        ),
+        lessonDescription: [
+            ImageWithDescription.init(
+                imgDescription: "Les1111son Description Ima1111ge Description. L111esson Description Image Description. Lesson Description Image Description. Lesson Description Image Description.",
+                imgFoto: nil
+            ),
+            ImageWithDescription.init(
+                imgDescription: "Lesson D22escription Image Description. Less2on Description Image Descri22ption. Lesson Description Image D22escription. Lesson Description Image Description.",
+                imgFoto: UIImage.init(named: "dog1")
+            ),
+            ImageWithDescription.init(
+                imgDescription: "Lesson Description Image Description 3. Lesson Description Image Descrip333tion. Lesson Description Imag333e Description. Lesson Description 33Image Description.",
+                imgFoto: UIImage.init(named: "dog3")
+            )
+        ],
+        lessonExample: Example.init(
+            examples: [
+                ImageWithDescription.init(
+                    imgDescription: "Lesson Example Image Description",
+                    imgFoto: UIImage.init(named: "dog3")
+                )
+            ]
+        ),
+        lessonQuiz: Quiz.init(
+            grade: 0.0,
+            questions: [
+                Question.init(
+                    questionText: "Question text 1",
+                    points: 10,
+                    questionImage: ImageWithDescription.init(
+                        imgDescription: "Image description",
+                        imgFoto: UIImage.init(named: "dog4")
+                        
+                    ),
+                    questionAnswer: [
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer1"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer2"
+                    ),
+                        Answer.init(
+                        isCorrect: false, answerText: "Answer3"
+                    ),
+                        Answer.init(
+                        isCorrect: true, answerText: "Correct"
+                    )
+                    ],
+                    isAnswered : false
+                    
+                )
+            ]
+        )
+    )
+    
+    let lesson3 = Lesson.init(
+        lessonName: "Nombre de usuario",
+        completed: false,
         lessonStructure: LessonStructure.init(
             examples: [
                 ImageWithDescription.init(
@@ -234,7 +306,7 @@ class LessonsTableTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         let DescriptionVC = segue.destination as! DescriptionViewController
-        DescriptionVC.lesson = lesson
+        DescriptionVC.lesson = lessonList[tableView.indexPathForSelectedRow!.row]
     }
 
 }
