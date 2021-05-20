@@ -338,7 +338,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Fecha entre parentesis despues de poner un punto y seguido tras poner el director.</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -348,7 +348,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Utilice la fecha en la cual se publico la pelicula</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -385,7 +385,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
+												<string>¿Cómo es el formato de fecha de películas?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -399,15 +399,27 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<true/>
+														<false/>
 														<key>answerText</key>
-														<string>Falso</string>
+														<string>Se pone seguido del título y sin paréntesis</string>
+													</dict>
+													<dict>
+														<key>answerText</key>
+														<string>Se pone entre paréntesis el año en que se lanzó la película entre el director y el título</string>
+														<key>isCorrect</key>
+														<true/>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Verdadero</string>
+														<string>No se pone</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>Se pone seguido del título entre paréntesis</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -429,7 +441,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Fecha entre parentesis tras el punto y seguido que viene despues del director. Se ponen los dos años, inicial y final, separados por un guion.</string>
 												<key>imgFoto</key>
 												<string>SerieStructure</string>
 											</dict>
@@ -439,7 +451,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
+											<string>Debe ponerse el año inicial y final en los que se publico la serie. En caso de seguir emitiendose se pone (año inicial - actualidad)</string>
 											<key>imgFoto</key>
 											<string>Productor</string>
 										</dict>
@@ -465,7 +477,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>¿Cómo se pone la fecha cuando una serie de televisión se está emitiendo a día de hoy?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -479,27 +491,27 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Los guionistas</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El director</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
+														<string>(año inicio- actualidad)</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>(año de inicio)</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>(emitiendo actualmente)</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>(año de inicio- año actual)</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -521,7 +533,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Fecha entre parentesis despues del punto y seguido que viene tras el director.</string>
 												<key>imgFoto</key>
 												<string>EpisodioStructure</string>
 											</dict>
@@ -531,8 +543,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
+											<string>En este caso se pone la fecha excta de cuando se emitio el capitulo.  Dia (con numero) de mes (con letra) de año (con numero).</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -557,7 +568,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
+												<string>En un capitulo de serie de television no se pone la fecha exacta de su emision</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -571,27 +582,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
+														<string>Falso</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El actor principal</string>
+														<string>Verdadero</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
