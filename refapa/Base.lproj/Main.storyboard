@@ -223,7 +223,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="hgc-QF-Uzt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
