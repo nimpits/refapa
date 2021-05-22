@@ -2497,9 +2497,10 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Cite a esta persona usando el nombre con el formato como aparece en el comentario. Después, proporcione el título del comentario, ó hasta las primeras 20 palabras del mismo. Luego escriba &quot;Comentario en la entrada&quot; y el título COMPLETO de la publicación en la que apareció el comentario, entre comillas y toda la oración en corchetes.
+Si hay un enlace que da directamente al comentario, use ese, de lo contrario agregue un enlace a la publicación completa.</string>
 												<key>imgFoto</key>
-												<string>SerieStructure</string>
+												<string>citaApaEstructuraBlogComentario</string>
 											</dict>
 										</array>
 									</dict>
@@ -2507,9 +2508,9 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
+											<string>Cuando un usuario hace un comentario en una publicacion usando su nombre completo, es muy importante poder citarlo correctamente.</string>
 											<key>imgFoto</key>
-											<string>Productor</string>
+											<string>blogUser</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2518,10 +2519,9 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string>AlvaroH. (2 de febrero 2020). Claro que no pueden ser todos culpa de Uribe, pero no es mera coincidencia que los uribistas suelen ser quienes [Comentario en la entrada “El paro sigue, la culpa de Duque y el uribismo es eterna”]. La Silla Vacía. https://lasillavacia.com/blogs/latoneria-y-pintura/paro-sigue-culpa-duque-y-uribismo-eterna-75381</string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>blogComentarioNombreDeUsuario</string>
 											</dict>
 										</array>
 									</dict>
@@ -2533,7 +2533,7 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>¿Cuantas palabras del comentario de texto son las que puedes poner en una cita APA?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -2549,25 +2549,25 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Los guionistas</string>
+														<string>10</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El director</string>
+														<string>15</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor</string>
+														<string>Todas</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
+														<string>20</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
