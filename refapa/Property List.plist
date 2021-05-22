@@ -2402,7 +2402,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Autor de la entrada del Blog</string>
+									<string>Autor de la entrada del Blog </string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2411,9 +2411,10 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>El formato es parecido al de los artículos de la revista.
+Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articulo del blog. Nombre del Blog. URL DEL BLOG</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>BloggerStructure</string>
 											</dict>
 										</array>
 									</dict>
@@ -2421,9 +2422,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Cita usando la estructura Apellido, N. (En caso de que el autor use un pseudonimo, usalo en vez del nombre.)</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>BloggerStructure</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2432,21 +2433,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string>Ospina, L. (2 de febrero de 2020). El paro sigue, la culpa de Duque y el uribismo es eterna. La Silla Vacía. </string>
 												<key>imgFoto</key>
-												<string>cruella</string>
+												<string>ejemploAutor</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
+												<string>El Blog de la BNE. (30 de octubre de 2014). Andrés Vesalio: Anatomista renaciente y médico de los Austrias mayores [Mensaje en un blog]. Recuperado de http://blog.bne.es/blog/andres-vesalio-anatomista-renaciente-y-medico-de-los-austrias-mayores/</string>
 												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
+												<string>ejemploAutor2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2458,7 +2453,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
+												<string>¿Qué pasa cuando el autor usa un pseudonimo en vez de su nombre completo?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -2474,13 +2469,13 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>Falso</string>
+														<string>Se pone el pseudonimo en vez de el nombre completo</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Verdadero</string>
+														<string>No se puede citar con APA y hay que usar otro método</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
