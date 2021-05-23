@@ -59,13 +59,14 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         
+        
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         let question = lesson.lessonQuiz.questions[lastAnswered]
         let questionAnswer = question.questionAnswer[indexPath.row].answerText //should we delete this?
         let questionText = question.questionText
         lbTituloCelda.text = questionText
         cell.textLabel?.text = questionAnswer
-    
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     
@@ -110,7 +111,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
      }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        
+        return 100
     }
     
     /*
