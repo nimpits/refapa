@@ -10,7 +10,11 @@ import UIKit
 class SectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 145)
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        
+        return CGSize(width: (screenWidth / 2) - 30, height: (screenHeight / 4) - 10)
     }
     
     @IBOutlet weak var collectionView: UICollectionView!

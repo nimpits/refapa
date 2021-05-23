@@ -17,9 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ARi-sl-xd8">
-                                <rect key="frame" x="16" y="115" width="343" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-zd-2mb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rJt-OU-NxX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ARi-sl-xd8">
+                                <rect key="frame" x="16" y="105" width="343" height="542"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MIF-CJ-mYa">
                                     <size key="itemSize" width="230" height="152"/>
@@ -93,22 +101,17 @@
                                     <outlet property="delegate" destination="fkr-PZ-8id" id="6hC-zr-fCG"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-zd-2mb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="gXz-0u-QYR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AYN-2d-U37"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AYN-2d-U37" firstAttribute="trailing" secondItem="m5s-zd-2mb" secondAttribute="trailing" id="J2e-Zr-eMw"/>
-                            <constraint firstItem="m5s-zd-2mb" firstAttribute="leading" secondItem="AYN-2d-U37" secondAttribute="leading" id="N4w-QX-j9H"/>
-                            <constraint firstItem="m5s-zd-2mb" firstAttribute="top" secondItem="AYN-2d-U37" secondAttribute="top" constant="20" id="Pww-d5-9OK"/>
+                            <constraint firstItem="m5s-zd-2mb" firstAttribute="leading" secondItem="AYN-2d-U37" secondAttribute="leading" id="0qe-B8-4Kz"/>
+                            <constraint firstAttribute="bottom" secondItem="ARi-sl-xd8" secondAttribute="bottom" constant="20" symbolic="YES" id="3DM-LM-fGa"/>
+                            <constraint firstItem="m5s-zd-2mb" firstAttribute="trailing" secondItem="AYN-2d-U37" secondAttribute="trailing" id="kl2-jQ-xfL"/>
+                            <constraint firstItem="ARi-sl-xd8" firstAttribute="leading" secondItem="7C1-sr-dBm" secondAttribute="leadingMargin" id="oBT-C0-eXd"/>
+                            <constraint firstItem="m5s-zd-2mb" firstAttribute="top" secondItem="AYN-2d-U37" secondAttribute="top" constant="20" id="rrC-HY-sBN"/>
+                            <constraint firstItem="ARi-sl-xd8" firstAttribute="centerX" secondItem="m5s-zd-2mb" secondAttribute="centerX" id="sZ7-od-heN"/>
+                            <constraint firstItem="ARi-sl-xd8" firstAttribute="top" secondItem="m5s-zd-2mb" secondAttribute="bottom" constant="20" id="tyV-5K-0lv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F61-Bq-nP8"/>
