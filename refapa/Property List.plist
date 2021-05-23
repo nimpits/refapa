@@ -2496,12 +2496,6 @@ Sigue el siguiente formato -&gt; Apellido, N (fecha completa). Titulo del articu
 												<key>imgFoto</key>
 												<string>ejemploAutor</string>
 											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>El Blog de la BNE. (30 de octubre de 2014). Andrés Vesalio: Anatomista renaciente y médico de los Austrias mayores [Mensaje en un blog]. Recuperado de http://blog.bne.es/blog/andres-vesalio-anatomista-renaciente-y-medico-de-los-austrias-mayores/</string>
-												<key>imgFoto</key>
-												<string>ejemploAutor2</string>
-											</dict>
 										</array>
 									</dict>
 									<key>lessonQuiz</key>
@@ -2658,10 +2652,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
+											<string>Cuando un usuario hace un comentario en una publicacion usando su nombre de usuario, es muy importante poder citarlo correctamente.</string>
 											<key>imgFoto</key>
-											<string>Guionista</string>
+											<string>blogUser</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2746,7 +2739,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Comentario con Nombre de Usuario</string>
+									<string>Entrada de Blog</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2766,9 +2759,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, se usa el nombre de la persona que escribió el comentario, para poder darle credito por su publicación.</string>
+											<string>Para citar un blog, se usa la fecha en el que fue publicado.</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>calendar</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2777,21 +2770,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>AlvaroH. (2 de febrero 2020). Claro que no pueden ser todos culpa de Uribe, pero no es mera coincidencia que los uribistas suelen ser quienes [Comentario en la entrada “El paro sigue, la culpa de Duque y el uribismo es eterna”]. La Silla Vacía. https://lasillavacia.com/blogs/latoneria-y-pintura/paro-sigue-culpa-duque-y-uribismo-eterna-75381</string>
+												<string>Ospina, L. (2 de febrero de 2020). El paro sigue, la culpa de Duque y el uribismo es eterna. La Silla Vacía. </string>
 												<key>imgFoto</key>
-												<string>blogComentarioNombreDeUsuario</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
+												<string>ejemploAutor</string>
 											</dict>
 										</array>
 									</dict>
@@ -2803,7 +2784,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
+												<string>¿Qué fecha se usa en la cita APA?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -2819,13 +2800,13 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>Falso</string>
+														<string>La fecha en la que se publicó el articulo</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Verdadero</string>
+														<string>La fecha en la que se recuperó el articulo.</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -2838,7 +2819,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Serie de televisión</string>
+									<string>Comentario de Blog</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -2918,98 +2899,6 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<true/>
 														<key>answerText</key>
 														<string>El productor ejecutivo</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>EpisodioStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
-											<key>imgFoto</key>
-											<string>Guionista</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
-												<key>imgFoto</key>
-												<string>Breaking Bad</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El actor principal</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
