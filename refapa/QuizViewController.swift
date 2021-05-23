@@ -33,7 +33,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             lesson.completed = true
             return 0
         }else{
-            return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count
+            return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count 
         }
     }
     
@@ -75,7 +75,6 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let toCheck = lesson.lessonQuiz.questions[lastAnswered].questionAnswer[indexPath.row].isCorrect
         
         if(toCheck == true){
-            lesson.lessonQuiz.lastQuestionAnswered += 1
             correct = true
             //need to check if its the last question too
             //give poitns to the user
@@ -95,12 +94,24 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
       
         
         if (correct == true){
+            if (nextButton.titleLabel?.text == "Check"){
+                lesson.lessonQuiz.lastQuestionAnswered += 1
+            }
+            else{
+            }
+                
+        
+
             tableView.reloadData()
         }else {
             lblCongrats.text = "Respuesta incorrecta!"
             lblCongrats.textColor = UIColor.red
-        }
+            }
      }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     
     /*
      func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?
