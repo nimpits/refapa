@@ -2461,6 +2461,91 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
+									<string>Autor Corporativo</string>
+									<key>completed</key>
+									<false/>
+									<key>lessonStructure</key>
+									<dict>
+										<key>examples</key>
+										<array>
+											<dict>
+												<key>imgDescription</key>
+												<string>En el apartado de nombre y apellido va el nombre de la empresa, luego la fecha en el formato Año, Mes Día. Después el título del post seguido por la leyenda entre corchetes [Mensaje en un blog]. Y al final va el nombre del sitio y su URL</string>
+												<key>imgFoto</key>
+												<string>formatoCorporativo</string>
+											</dict>
+										</array>
+									</dict>
+									<key>lessonDescription</key>
+									<array>
+										<dict>
+											<key>imgDescription</key>
+											<string>Cuando el autor es una empresa o corporativo, se utiliza el nombre de la empresa en vez del nombre del autor.</string>
+											<key>imgFoto</key>
+											<string>company</string>
+										</dict>
+									</array>
+									<key>lessonExample</key>
+									<dict>
+										<key>examples</key>
+										<array>
+											<dict>
+												<key>imgDescription</key>
+												<string>The Home Depot. (2021, marzo 2021). 8 ideas para decorar con plantas. [Mensaje en un blog] The home depot blog. https://blog.homedepot.com.mx/club-jardineria/plantas-y-accesorios/8-ideas-para-decorar-con-plantas </string>
+												<key>imgFoto</key>
+												<string>ejemploCorporativo</string>
+											</dict>
+										</array>
+									</dict>
+									<key>lessonQuiz</key>
+									<dict>
+										<key>grade</key>
+										<integer>0</integer>
+										<key>questions</key>
+										<array>
+											<dict>
+												<key>questionText</key>
+												<string>¿Qué pasa si el autor del blog es una empresa?</string>
+												<key>points</key>
+												<integer>5</integer>
+												<key>questionImage</key>
+												<dict>
+													<key>imgDescription</key>
+													<string>Autor</string>
+													<key>imgFoto</key>
+													<string>Autor</string>
+												</dict>
+												<key>questionAnswer</key>
+												<array>
+													<dict>
+														<key>isCorrect</key>
+														<true/>
+														<key>answerText</key>
+														<string>Se pone el nombre de la empresa tal cuál.</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>Ponemos el nombre de la empresa en el formato Apellido, Nombre (Home Depot, The)</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>No se puede citar con APA y hay que usar otro método</string>
+													</dict>
+												</array>
+												<key>isAnswered</key>
+												<false/>
+											</dict>
+										</array>
+										<key>lastQuestionAnswered</key>
+										<integer>0</integer>
+									</dict>
+								</dict>
+								<dict>
+									<key>lessonName</key>
 									<string>Autor de la entrada del Blog </string>
 									<key>completed</key>
 									<false/>
