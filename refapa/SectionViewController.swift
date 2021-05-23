@@ -23,7 +23,12 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
         
         cell.imgFoto.image = sectionTopicList[indexPath.row].getImage()
         cell.lbTitle.text = sectionTopicList[indexPath.row].topicName
-        cell.lbCompletion.text = String(sectionTopicList[indexPath.row].completion) + "% Completed"
+        let progress = calculateProgress(topic: sectionTopicList[indexPath.row])
+        cell.lbCompletion.text = String(progress) + "% Completed"
+        
+        if (progress == 100.0) {
+            cell.backgroundColor = UIColor(red: 0.24, green: 0.70, blue: 0.44, alpha: 1.00)
+        }
         
         // Rounded corners
         cell.layer.cornerRadius = 8
@@ -59,6 +64,20 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
 
     }
   
-    
+    func calculateProgress(topic: Topic) -> Double {
+        let totalLessons = topic.lessons.count
+        var totalLessonsCompleted = 0
+        for lesson in topic.lessons {
+            if lesson.completed {
+                totalLessonsCompleted += 1
+            }
+        }
+        
+        if (totalLessonsCompleted == 0) {
+            return 0
+        } else {
+            return floor((Double(totalLessonsCompleted) / (Double(totalLessons))) * 100)
+        }
+    }
 
 }
