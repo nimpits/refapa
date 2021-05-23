@@ -2511,9 +2511,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>question</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>question</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2836,7 +2836,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 												<string>Proporcione el título del comentario, ó hasta las primeras 20 palabras del mismo. Luego escriba &quot;Comentario en la entrada&quot; y el título COMPLETO de la publicación en la que apareció el comentario, entre comillas y toda la oración en corchetes.
 </string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>formatoCorporativo</string>
 											</dict>
 										</array>
 									</dict>
@@ -2875,9 +2875,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>question</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>question</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2913,9 +2913,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Primero van los nombres y la inicial del autor, como ya sabemos. Después va la fehca en el formato que ya conocemos, solo que esta fecha es del comentario y no de la publicación.</string>
 												<key>imgFoto</key>
-												<string>SerieStructure</string>
+												<string>commentStructure2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2923,9 +2923,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
+											<string>En este caso, se usa la fecha del comentario en vez de la fecha en la que se publicó el blog.</string>
 											<key>imgFoto</key>
-											<string>Productor</string>
+											<string>calendar</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2934,10 +2934,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string>Fernando Gabriel Gregoire, 29 de octubre de 2018 (22:34), comentario a Pablo Muñoz Sánchez, &quot;5 buenos hábitos al traducir aplicaciones móviles&quot;, Algo más que traducir (blog), 29 de octubre de 2018</string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>commentExample</string>
 											</dict>
 										</array>
 									</dict>
@@ -2949,15 +2948,15 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>¿Qué fecha se utiliza al citar un comentario?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>question</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>question</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2965,25 +2964,13 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Los guionistas</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El director</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
+														<string>La del articulo</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
+														<string>La de el comentario</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
