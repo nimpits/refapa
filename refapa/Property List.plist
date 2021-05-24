@@ -3600,7 +3600,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Autor principal</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -3609,9 +3609,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>Estructura1</string>
 											</dict>
 										</array>
 									</dict>
@@ -3619,9 +3619,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Para citar al autor de una canción es necesario conocer su primer apellido completo y la inicial de su nombre. 
+
+En el caso de canciones basta con citar al autor principal para poder citar su canción.
+
+
+Deberás proporcionar el nombre del artista de la grabación para las canciones modernas y el nombre del compositor para las canciones clásicas.
+</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string></string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -3630,101 +3636,19 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
-												<key>imgFoto</key>
-												<string>cruella</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>Falso</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Verdadero</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Serie de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>SerieStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
-											<key>imgFoto</key>
-											<string>Productor</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
+												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
+
 </string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>AEscondidas</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
+
+</string>
+												<key>imgFoto</key>
+												<string>Cancion2</string>
 											</dict>
 										</array>
 									</dict>
@@ -3736,7 +3660,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>Si deseo citar la canción “Hasta que me olvides” del cantante Luis Miguel cuyo nombre completo es Luis Miguel Gallego Basteri ¿Cómo se escribiría la parte de autor?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -3752,25 +3676,25 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Los guionistas</string>
+														<string>Miguel, L.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El director</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
+														<string>Luis, M.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
+														<string>Gallego, L.</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>Basteri, L.</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -3783,7 +3707,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Grupo Musical</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -3792,9 +3716,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Nombre del Grupo Musical [Grupo Musical]. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
 												<key>imgFoto</key>
-												<string>EpisodioStructure</string>
+												<string>EstructuraGrupo</string>
 											</dict>
 										</array>
 									</dict>
@@ -3802,10 +3726,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
+											<string>Para citar al autor de una canción cuando este es un grupo músical deberás poner el nombre del grupo músical y entre corchetes especificar que es un grupo musical.</string>
 											<key>imgFoto</key>
-											<string>Guionista</string>
+											<string></string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -3814,9 +3737,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
+												<string>Reik [Grupo musical] (2006).  Me duele amarte [Canción]. En Secuencia. Sony BMG Norte.</string>
 												<key>imgFoto</key>
-												<string>Breaking Bad</string>
+												<string>Reik</string>
 											</dict>
 										</array>
 									</dict>
@@ -3828,7 +3751,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
+												<string>Si deseo citar la canción “Pero te conocí” del grupo musical Reik ¿Cómo se escribiría la parte de autor?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -3844,25 +3767,25 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
+														<string>[Grupo Musical] Reik.</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>Reik.</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>[Reik] Grupo musical.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El actor principal</string>
+														<string>Reik [Grupo Musical].</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -3890,7 +3813,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Año de publicación</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -3899,9 +3822,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>Estructura1</string>
 											</dict>
 										</array>
 									</dict>
@@ -3909,9 +3832,10 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Para escribir la referencia de una canción es necesario conocer su fecha de publicación, en este caso solo utilizaremos el año en el que se publicó escrito entre paréntesis.
+</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>FechaConsulta</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -3920,101 +3844,19 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
-												<key>imgFoto</key>
-												<string>cruella</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>Falso</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Verdadero</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Serie de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>SerieStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
-											<key>imgFoto</key>
-											<string>Productor</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
+												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
+
 </string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>AEscondidas</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
+
+</string>
+												<key>imgFoto</key>
+												<string>Cancion2</string>
 											</dict>
 										</array>
 									</dict>
@@ -4026,15 +3868,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>Si deseo citar la canción “Pero te conocí” del grupo musical Reik que se publicó en el 2020 ¿Cómo se escribiría la parte de año de publicación?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>Reik</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>Reik</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -4042,117 +3884,25 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Los guionistas</string>
+														<string>2020.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El director</string>
+														<string>[2020].</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor</string>
+														<string>(Dos mil veinte).</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>EpisodioStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
-											<key>imgFoto</key>
-											<string>Guionista</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
-												<key>imgFoto</key>
-												<string>Breaking Bad</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El actor principal</string>
+														<string>(2020).</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -4180,7 +3930,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Titulo de una canción</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -4189,9 +3939,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>Estructura1</string>
 											</dict>
 										</array>
 									</dict>
@@ -4199,9 +3949,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Para escribir la referencia de una canción es necesario conocer su nombre o título, este se escribe después del año de publicación seguido de la palabra “Canción” escrita entre corchetes.</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>song</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -4210,101 +3960,19 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
-												<key>imgFoto</key>
-												<string>cruella</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>Falso</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Verdadero</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Serie de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>SerieStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
-											<key>imgFoto</key>
-											<string>Productor</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
+												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
+
 </string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>AEscondidas</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
+
+</string>
+												<key>imgFoto</key>
+												<string>Cancion2</string>
 											</dict>
 										</array>
 									</dict>
@@ -4316,133 +3984,41 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>Si deseo citar la canción “Pero te conocí” del grupo musical Reik que se publicó en el 2020 ¿Cómo se escribiría la parte de título?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>song</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>song</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Los guionistas</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El director</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>EpisodioStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
-											<key>imgFoto</key>
-											<string>Guionista</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
-												<key>imgFoto</key>
-												<string>Breaking Bad</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
+														<string>Pero te conocí [Canción].</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor</string>
+														<string>[Canción] Pero te conocí.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El actor principal</string>
+														<string>Pero te conocí (Canción).</string>
+													</dict>
+													<dict>
+														<key>isCorrect</key>
+														<false/>
+														<key>answerText</key>
+														<string>Pero te conocí.</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
@@ -4457,9 +4033,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 						</dict>
 						<dict>
 							<key>topicName</key>
-							<string>Fuente</string>
+							<string>Enlace</string>
 							<key>topicDescription</key>
-							<string>Fuente</string>
+							<string>Enlace</string>
 							<key>imgFoto</key>
 							<string>FuenteConsulta</string>
 							<key>priority</key>
@@ -4470,7 +4046,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Enlace a una canción</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -4479,9 +4055,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Apellido, N. (año). Título de la canción [Canción]. En Título del álbum. Grabadora. URL</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>Estructura2</string>
 											</dict>
 										</array>
 									</dict>
@@ -4489,9 +4065,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Para escribir la referencia de una canción es necesario conocer el enlace de donde se extrajo. Este se escribe después del título del albúm. </string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>FuenteConsulta</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -4500,101 +4076,11 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
-												<key>imgFoto</key>
-												<string>cruella</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>Falso</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>Verdadero</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Serie de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>SerieStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para un citar un libro.</string>
-											<key>imgFoto</key>
-											<string>Productor</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
+												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
+
 </string>
 												<key>imgFoto</key>
-												<string>La casa de papel</string>
+												<string>Cancion2</string>
 											</dict>
 										</array>
 									</dict>
@@ -4606,15 +4092,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor en una serie de televisión?</string>
+												<string>Si deseo citar la canción “Comme d&apos;habitude” ¿Cómo se escribiría la parte de enlace?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>Cancion2</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>Cancion2</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -4622,117 +4108,25 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Los guionistas</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El director</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor</string>
+														<string>Ver en youtube: https://youtu.be/PWmceAWh4AE</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<true/>
 														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-												</array>
-												<key>isAnswered</key>
-												<false/>
-											</dict>
-										</array>
-										<key>lastQuestionAnswered</key>
-										<integer>0</integer>
-									</dict>
-								</dict>
-								<dict>
-									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
-									<key>completed</key>
-									<false/>
-									<key>lessonStructure</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
-												<key>imgFoto</key>
-												<string>EpisodioStructure</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonDescription</key>
-									<array>
-										<dict>
-											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
-											<key>imgFoto</key>
-											<string>Guionista</string>
-										</dict>
-									</array>
-									<key>lessonExample</key>
-									<dict>
-										<key>examples</key>
-										<array>
-											<dict>
-												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
-												<key>imgFoto</key>
-												<string>Breaking Bad</string>
-											</dict>
-										</array>
-									</dict>
-									<key>lessonQuiz</key>
-									<dict>
-										<key>grade</key>
-										<integer>0</integer>
-										<key>questions</key>
-										<array>
-											<dict>
-												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
-												<key>points</key>
-												<integer>5</integer>
-												<key>questionImage</key>
-												<dict>
-													<key>imgDescription</key>
-													<string>Autor</string>
-													<key>imgFoto</key>
-													<string>Autor</string>
-												</dict>
-												<key>questionAnswer</key>
-												<array>
-													<dict>
-														<key>isCorrect</key>
-														<false/>
-														<key>answerText</key>
-														<string>El productor ejecutivo</string>
-													</dict>
-													<dict>
-														<key>isCorrect</key>
-														<true/>
-														<key>answerText</key>
-														<string>El guionista y director del episodio</string>
+														<string>https://youtu.be/PWmceAWh4AE</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El productor</string>
+														<string>Recuperado de: https://youtu.be/PWmceAWh4AE</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>El actor principal</string>
+														<string>Escuchado en: https://youtu.be/PWmceAWh4AE</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
