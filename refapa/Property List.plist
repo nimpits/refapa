@@ -3103,7 +3103,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 												<key>imgDescription</key>
 												<string>Seguímos la estructura que ya conocemos, incluyendo al final el URL de la página de donde accesamos la información.</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>formatoCorporativo</string>
 											</dict>
 										</array>
 									</dict>
