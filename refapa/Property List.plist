@@ -348,7 +348,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice la fecha del año en la cual se publicó la película.</string>
+											<string>Utilice la fecha del año en el cual se publicó la película.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -451,7 +451,8 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debe ponerse el año inicial y final en los que se publicó la serie. En caso de seguir emitiéndose se escribe: (año inicial - actualidad)</string>
+											<string>Debe ponerse el año inicial y final en los que se publicó la serie. En caso de seguir emitiéndose se escribe: 
+(año inicial - actualidad)</string>
 											<key>imgFoto</key>
 											<string>Productor</string>
 										</dict>
@@ -568,7 +569,8 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En un episodio de serie de televisión no se pone la fecha exacta de su emisión.</string>
+												<string>
+En un episodio de serie de televisión no se pone la fecha exacta de su emisión.</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
