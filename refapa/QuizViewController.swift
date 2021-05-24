@@ -92,7 +92,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         if (lesson.completed == true){
             appDataSaver.saveAppData()
-            navigationController?.popToViewController((navigationController?.viewControllers[0])!, animated: true)
+            navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
         }
       
         
