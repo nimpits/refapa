@@ -48,7 +48,7 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis.	</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -139,7 +139,7 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis, seguido de los años en que la serie fue transmitida entre paréntesis, seguido del título de la serie, seguido de las palabras &quot;Serie de televisión&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>Nombre e inicial de apellido del (los) productores ejecutivos, seguido de las palabras &quot;Productor(es) Ejecutivo&quot; entre paréntesis.</string>
 												<key>imgFoto</key>
 												<string>SerieStructure</string>
 											</dict>
@@ -231,7 +231,7 @@
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis, seguido de la fecha de estreno entre paréntesis, seguido del título de la serie, su temporada y número de episodio, seguido de las palabras &quot;Episodio de serie de televisión&quot; entre corchetes, seguido del nombre de los productores ejecutivos, seguido del titulo de la serie en cursiva, seguido del nombre de la productora.</string>
+												<string>Nombre e inicial de apellido del guionista y director, cada uno seguido de su rol respectivo entre paréntesis.</string>
 												<key>imgFoto</key>
 												<string>EpisodioStructure</string>
 											</dict>
@@ -338,7 +338,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Fecha entre parentesis despues de poner un punto y seguido tras poner el director.</string>
+												<string>Fecha entre paréntesis después de poner un punto y seguido tras poner el director.</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -348,7 +348,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice la fecha en la cual se publico la pelicula</string>
+											<string>Utilice la fecha del año en la cual se publicó la película.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -441,7 +441,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Fecha entre parentesis tras el punto y seguido que viene despues del director. Se ponen los dos años, inicial y final, separados por un guion.</string>
+												<string>Fecha entre paréntesis tras el punto y seguido que viene después del director. Se ponen los dos años, inicial y final, separados por un guión. 	</string>
 												<key>imgFoto</key>
 												<string>SerieStructure</string>
 											</dict>
@@ -451,7 +451,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debe ponerse el año inicial y final en los que se publico la serie. En caso de seguir emitiendose se pone (año inicial - actualidad)</string>
+											<string>Debe ponerse el año inicial y final en los que se publicó la serie. En caso de seguir emitiéndose se escribe: (año inicial - actualidad)</string>
 											<key>imgFoto</key>
 											<string>Productor</string>
 										</dict>
@@ -533,7 +533,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Fecha entre parentesis despues del punto y seguido que viene tras el director.</string>
+												<string>Fecha entre paréntesis después del punto y seguido que viene tras el director.</string>
 												<key>imgFoto</key>
 												<string>EpisodioStructure</string>
 											</dict>
@@ -543,7 +543,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso se pone la fecha excta de cuando se emitio el capitulo.  Dia (con numero) de mes (con letra) de año (con numero).</string>
+											<string>En este caso se pone la fecha excta de cuando se emitió el episodio.  Día (con número) de mes (con letra) de año (con número).</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -568,7 +568,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En un capitulo de serie de television no se pone la fecha exacta de su emision</string>
+												<string>En un episodio de serie de televisión no se pone la fecha exacta de su emisión.</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -627,7 +627,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Despues de la fecha se pone punto. A continuacion se escribe el nombre de la pelicula seguido de pelicula escrito entre corchetes.</string>
+												<string>Después de la fecha se pone punto. A continuación se escribe el nombre de la película seguido de película escrito entre corchetes.</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -637,7 +637,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Escriba el nombre  de la pelicula en su lengua original</string>
+											<string>Escriba el nombre  de la película en su idioma original.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -712,7 +712,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe igual que cuando esta en el mismo idioma, solo que a continuacion, antes de poner pelicula entre corchetes, se pone, tambien entre corchetes el nombre de la pelicula traducida .</string>
+												<string>Se escribe igual que cuando está en el mismo idioma, solo que a continuación, antes de poner película entre corchetes, se pone, también entre corchetes el nombre de la película traducida.</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -722,7 +722,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Escriba el nombre de la pelicula en su idioma original. La traduccion se escribe en el idioma en el cual se haya escrito el documento.</string>
+											<string>Escriba el nombre de la película en su idioma original. La traducción se escribe en el idioma en el cual se haya escrito el documento.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -747,7 +747,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string> ¿Qué sucede si el idioma en el que esta escrito el título de la película es diferente al del documento?</string>
+												<string>¿Qué sucede si el idioma en el que está escrito el título de la película es diferente al del documento?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -763,13 +763,13 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Se pone unicamente en la lengua original</string>
+														<string>Se pone únicamente en la lengua original</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Se escribe unicamente en el idioma del documento</string>
+														<string>Se escribe únicamente en el idioma del documento</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
@@ -797,7 +797,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe el titulo de la serie seguido de &quot;Serie de television&quot; entre corchetes</string>
+												<string>Se escribe el título de la serie seguido de &quot;Serie de televisión&quot; entre corchetes</string>
 												<key>imgFoto</key>
 												<string>SerieStructure</string>
 											</dict>
@@ -807,7 +807,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>El titulo de la serie se escribe en el idioma original. En caso de ser distinto al del documento, no se traduce.</string>
+											<string>El título de la serie se escribe en el idioma original. En caso de ser distinto al del documento, no se traduce.</string>
 											<key>imgFoto</key>
 											<string>Productor</string>
 										</dict>
@@ -833,7 +833,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿En que idioma se escribe el titulo de la serie de television?</string>
+												<string>¿En qué idioma se escribe el título de la serie de televisión?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -883,7 +883,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe el titulo del capitulo seguido de  &quot;Temporada (numero de la temporada), Episodio (numero del capitulo)&quot; entre parentesis, seguido de &quot;Serie de television&quot; entre corchetes. Luego se pone  la fuente, como veremos, y a continuacion el titulo de la serie.</string>
+												<string>Se escribe el título del episodio seguido de “Temporada (numero de la temporada), Episodio (número del episodio)&quot; entre paréntesis, seguido de &quot;Serie de televisión&quot; entre corchetes. Luego se pone la fuente, como veremos, y a continuación el título de la serie.</string>
 												<key>imgFoto</key>
 												<string>EpisodioStructure</string>
 											</dict>
@@ -893,7 +893,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>El titulo del capitulo y el titulo de la serie se escriben en el idioma original. La parte de &quot;Temporada X, Episodio Y&quot; se escribe en el idioma del documento.</string>
+											<string>El título del capítulo y el título de la serie se escriben en el idioma original. La parte de &quot;Temporada X, Episodio Y&quot; se escribe en el idioma del documento.</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -918,7 +918,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Como se escribe el numero de temporada y el numero de capitulo?</string>
+												<string>¿Cómo se escribe el número de temporada y el número de episodio?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -934,13 +934,13 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Capitulo 2 de la temporada 5</string>
+														<string>Capítulo 2 de la temporada 5</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Temporada 5, capitulo 2</string>
+														<string>Temporada 5, capítulo 2</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
@@ -989,7 +989,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe al final, despues del titulo. </string>
+												<string>Se escribe al final, después del título.</string>
 												<key>imgFoto</key>
 												<string>PeliculaStructure</string>
 											</dict>
@@ -999,7 +999,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma</string>
+											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma.</string>
 											<key>imgFoto</key>
 											<string>Director</string>
 										</dict>
@@ -1080,7 +1080,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe al final.Despues del titulo de la serie.</string>
+												<string>Se escribe al final. Después del título de la serie.</string>
 												<key>imgFoto</key>
 												<string>SerieStructure</string>
 											</dict>
@@ -1090,7 +1090,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma</string>
+											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma.</string>
 											<key>imgFoto</key>
 											<string>Productor</string>
 										</dict>
@@ -1116,7 +1116,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quie ocurre si hay mas de una productora?</string>
+												<string>¿Qué ocurre si hay más de una productora?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -1132,7 +1132,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Solo se escribe el nombre de la mas importante</string>
+														<string>Solo se escribe el nombre de la más importante</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
@@ -1144,7 +1144,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 														<key>isCorrect</key>
 														<false/>
 														<key>answerText</key>
-														<string>Se escriben todas separados por punto y seguido.</string>
+														<string>Se escriben todas separadas por punto y seguido.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
@@ -1172,7 +1172,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se escribe al final. Despues del titulo de la serie.</string>
+												<string>Se escribe al final. Después del título de la serie.</string>
 												<key>imgFoto</key>
 												<string>EpisodioStructure</string>
 											</dict>
@@ -1182,7 +1182,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma</string>
+											<string>Informe el nombre de la productora. Separe varias compañías de producción con un punto y coma.</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -1298,7 +1298,8 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
+											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).
+Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
 											<key>imgFoto</key>
 											<string>youtuber</string>
 										</dict>
