@@ -154,7 +154,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fkr-PZ-8id" kind="show" id="zNe-1N-z1i"/>
+                                    <segue destination="fkr-PZ-8id" kind="show" identifier="regular" id="zNe-1N-z1i"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -163,7 +163,16 @@
                             <outlet property="delegate" destination="XWG-xS-SCA" id="Rcg-p2-9CQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ee0-LP-NG5"/>
+                    <navigationItem key="navigationItem" id="ee0-LP-NG5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="DY9-ve-dBg">
+                            <connections>
+                                <segue destination="UHQ-Df-g8v" kind="show" identifier="credits" id="PEs-8r-oez"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookmarks" destination="DY9-ve-dBg" id="QBu-89-HPW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMY-a5-V6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -697,6 +706,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pH6-Gp-Dgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4556" y="98.50074962518741"/>
+        </scene>
+        <!--Creditos-->
+        <scene sceneID="zTv-oc-ple">
+            <objects>
+                <viewController id="UHQ-Df-g8v" customClass="CreditsViewController" customModule="refapa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eud-ml-X0K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="naT-mg-QyY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Creditos" id="87z-yJ-43T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nug-oo-6sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-700"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZUW-AP-j1A">
