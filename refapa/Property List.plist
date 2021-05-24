@@ -1298,7 +1298,8 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
+											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).
+Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
 											<key>imgFoto</key>
 											<string>youtuber</string>
 										</dict>
@@ -2579,7 +2580,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>AEscondidas</string>
+												<string>aEscondidas</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
