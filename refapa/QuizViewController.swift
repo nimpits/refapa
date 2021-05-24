@@ -67,6 +67,15 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let questionAnswer = question.questionAnswer[indexPath.row].answerText //should we delete this?
         let questionText = question.questionText
         lbTituloCelda.text = questionText
+        lbTituloCelda.numberOfLines = 0
+
+        lbTituloCelda.preferredMaxLayoutWidth = 700
+        lbTituloCelda.translatesAutoresizingMaskIntoConstraints = false
+
+        lbTituloCelda.lineBreakMode = .byWordWrapping
+
+        lbTituloCelda.sizeToFit()
+        
         cell.textLabel?.text = questionAnswer
         cell.textLabel?.numberOfLines = 0
         return cell
