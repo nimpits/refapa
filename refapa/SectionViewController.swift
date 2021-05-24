@@ -50,6 +50,7 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         lbAppTitle.text = "Selecciona el tema que deseas aprender"
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        collectionView.reloadData()
     }
     
 
