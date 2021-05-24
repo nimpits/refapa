@@ -115,7 +115,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return UITableView.automaticDimension
     }
     
     /*
