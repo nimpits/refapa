@@ -2998,7 +2998,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 							<array>
 								<dict>
 									<key>lessonName</key>
-									<string>Película</string>
+									<string>Entrada de Blog</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -3007,9 +3007,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre e inicial de apellido del Director, seguido de la palabra &quot;Director&quot; entre paréntesis, seguido del año de estreno entre paréntesis, seguido del título de la película, seguido de la palabra &quot;Película&quot; entre corchetes, seguido del nombre de la productora.</string>
+												<string>La estructura se compone de los apellidos y la inicial del nombre del autor, la fecha en formato A/M/D. Seguído por el título del post, que si es mayor a 20 palabras, solo se escriben las primeras 20. Seguido por el nombre del sitio y la URL.</string>
 												<key>imgFoto</key>
-												<string>PeliculaStructure</string>
+												<string>formatoCorporativo</string>
 											</dict>
 										</array>
 									</dict>
@@ -3017,9 +3017,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Utilice el nombre del director como autor de la referencia, seguido de la anotación (Director).</string>
+											<string>Cuando se hace una referencia en APA a un blog, se usa el título de la publicación, si este tiene más de 20 palabras, solo se usan las primeras 20.</string>
 											<key>imgFoto</key>
-											<string>Director</string>
+											<string>blog</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -3028,21 +3028,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string>En este caso, como el título no excede las 20 palabras, se escribe completo. Y queda así: The Home Depot. (2021, marzo 2021). 8 ideas para decorar con plantas. [Mensaje en un blog] The home depot blog. https://blog.homedepot.com.mx/club-jardineria/plantas-y-accesorios/8-ideas-para-decorar-con-plantas </string>
 												<key>imgFoto</key>
-												<string>cruella</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
-												<key>imgFoto</key>
-												<string>Nomadland</string>
-											</dict>
-											<dict>
-												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
-												<key>imgFoto</key>
-												<string>Knives Out</string>
+												<string>ejemploCorporativo</string>
 											</dict>
 										</array>
 									</dict>
@@ -3054,29 +3042,29 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>En la referencia de una película siempre ha de incluirse el nombre del actor principal.</string>
+												<string>¿Cuál de las siguientes es la forma correcta de citar a un blog?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string>apa2</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>apa2</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
 													<dict>
 														<key>isCorrect</key>
-														<true/>
+														<false/>
 														<key>answerText</key>
-														<string>Falso</string>
+														<string>Como conseguir una computadora a mitad de precio al comprar por internet usando una tarjeta de credito del mejor banco de México.</string>
 													</dict>
 													<dict>
 														<key>isCorrect</key>
-														<false/>
+														<true/>
 														<key>answerText</key>
-														<string>Verdadero</string>
+														<string>Como conseguir una computadora a mitad de precio al comprar por internet usando una tarjeta de credito del mejor.</string>
 													</dict>
 												</array>
 												<key>isAnswered</key>
