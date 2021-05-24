@@ -86,5 +86,9 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
             return floor((Double(totalLessonsCompleted) / (Double(totalLessons))) * 100)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
 
 }
