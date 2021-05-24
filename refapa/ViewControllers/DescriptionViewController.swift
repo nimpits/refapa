@@ -48,6 +48,8 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     // MARK: - Navigation
+    
+    var appDataSaver: AppDataSaver!
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,6 +58,7 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
         
         let exampleVC = segue.destination as! ExampleViewController
         exampleVC.lesson = lesson
+        exampleVC.appDataSaver = appDataSaver
     }
 
 }

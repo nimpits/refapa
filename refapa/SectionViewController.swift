@@ -9,6 +9,8 @@ import UIKit
 
 class SectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    var appDataSaver: AppDataSaver!
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
@@ -64,6 +66,7 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
             let selectedIndexPath = collectionView.indexPath(for: sender as! UICollectionViewCell)!
             let lessonsTableVC = segue.destination as! LessonsTableTableViewController
             lessonsTableVC.topic = sectionTopicList[selectedIndexPath.row]
+            lessonsTableVC.appDataSaver = appDataSaver
         }
 
     }

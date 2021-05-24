@@ -17,6 +17,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var lesson: Lesson!
     var correct : Bool!
+    var appDataSaver: AppDataSaver!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +91,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
      @IBAction func checkCorrect(_ sender: UIButton) {
         
         if (lesson.completed == true){
+            appDataSaver.saveAppData()
             navigationController?.popToViewController((navigationController?.viewControllers[0])!, animated: true)
         }
       

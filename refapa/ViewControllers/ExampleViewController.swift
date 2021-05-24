@@ -45,7 +45,7 @@ class ExampleViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.rowHeight = UITableView.automaticDimension
     }
     
-
+    var appDataSaver: AppDataSaver!
     
     // MARK: - Navigation
 
@@ -56,6 +56,7 @@ class ExampleViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let structureVC = segue.destination as! StructureViewController
         structureVC.lesson = lesson
+        structureVC.appDataSaver = appDataSaver
     }
 
 }

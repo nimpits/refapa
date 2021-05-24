@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ReferenceTableViewController: UITableViewController {
+protocol AppDataSaver {
+    func saveAppData()
+}
+
+class ReferenceTableViewController: UITableViewController, AppDataSaver {
     
     var referenceList = [Reference]()
     
@@ -226,7 +230,7 @@ class ReferenceTableViewController: UITableViewController {
         
         do {
             let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta!))
-            let mainApp = try PropertyListDecoder().decode(MainApp.self, from: data)
+            mainApp = try PropertyListDecoder().decode(MainApp.self, from: data)
             referenceList = mainApp.references
         }
         catch {
@@ -240,6 +244,24 @@ class ReferenceTableViewController: UITableViewController {
 //            Reference(referenceName: "Post de blog", priority: 2, sections: sectionList, referenceImage: "blog"),
 //            Reference(referenceName: "Youtube", priority: 3, sections: sectionList, referenceImage: "youtube"),
 //        ]
+    }
+    
+    var mainApp: MainApp!
+    
+    func saveAppData() {
+        let ruta = Bundle.main.path(forResource: "Property List", ofType: "plist")!
+
+        do {
+            let encoder = PropertyListEncoder()
+            encoder.outputFormat = .xml
+            let data = try encoder.encode(mainApp)
+            
+            try data.write(to: URL.init(fileURLWithPath: ruta))
+        }
+        catch {
+            print(error)
+            print("Error al guardar el datos")
+        }
     }
 
     // MARK: - Table view data source
@@ -307,6 +329,7 @@ class ReferenceTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sections = segue.destination as! SectionViewController
         sections.sectionTopicList = referenceList[tableView.indexPathForSelectedRow!.row].sections[0].topics
+        sections.appDataSaver = self
     }
 
 }

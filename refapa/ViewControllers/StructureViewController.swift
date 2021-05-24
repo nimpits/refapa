@@ -44,7 +44,7 @@ class StructureViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.rowHeight = UITableView.automaticDimension
     }
     
-
+    var appDataSaver: AppDataSaver!
   
     // MARK: - Navigation
 
@@ -54,6 +54,7 @@ class StructureViewController: UIViewController, UITableViewDataSource, UITableV
         // Pass the selected object to the new view controller.
         let quizVC = segue.destination as! QuizViewController
         quizVC.lesson = lesson
+        quizVC.appDataSaver = appDataSaver
         
         
        

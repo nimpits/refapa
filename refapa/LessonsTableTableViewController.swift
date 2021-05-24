@@ -109,12 +109,16 @@ class LessonsTableTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    var appDataSaver: AppDataSaver!
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
         let DescriptionVC = segue.destination as! DescriptionViewController
         DescriptionVC.lesson = lessonList[tableView.indexPathForSelectedRow!.row]
+        DescriptionVC.appDataSaver = appDataSaver
     }
 
 }
