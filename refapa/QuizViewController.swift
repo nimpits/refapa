@@ -23,15 +23,16 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         imageView.image = lesson.lessonStructure.examples[0].getImage()
         nextButton.layer.cornerRadius = 5
+        title = lesson.lessonName
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         if (lastAnswered == lesson.lessonQuiz.questions.count){
-            lblCongrats.text = " Congratulations! You passed the quiz "
-            lblCongrats.textColor = UIColor.blue
-            nextButton.setTitle("Back to main page", for: .normal)
+            lblCongrats.text = "¡Felicidades, pasaste el quiz!"
+            lblCongrats.textColor = UIColor.init(red: 31/255, green: 181/255, blue: 39/255, alpha: 1)
+            nextButton.setTitle("Volver a la página principal", for: .normal)
             lesson.completed = true
             return 0
         }else{
@@ -107,7 +108,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
       
         
         if (correct == true){
-            if (nextButton.titleLabel?.text == "Check"){
+            if (nextButton.titleLabel?.text == "Checar"){
                 lesson.lessonQuiz.lastQuestionAnswered += 1
             }
             else{
@@ -117,8 +118,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
             tableView.reloadData()
         }else {
-            lblCongrats.text = "Respuesta incorrecta!"
-            lblCongrats.textColor = UIColor.red
+            lblCongrats.text = "¡Respuesta incorrecta!"
+            lblCongrats.textColor = UIColor.init(red: 227/255, green: 82/255, blue: 66/255, alpha: 1)
             }
      }
     
