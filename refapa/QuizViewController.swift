@@ -22,6 +22,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = lesson.lessonStructure.examples[0].getImage()
+        nextButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
     
@@ -66,6 +67,15 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let questionAnswer = question.questionAnswer[indexPath.row].answerText //should we delete this?
         let questionText = question.questionText
         lbTituloCelda.text = questionText
+        lbTituloCelda.numberOfLines = 0
+
+        lbTituloCelda.preferredMaxLayoutWidth = 700
+        lbTituloCelda.translatesAutoresizingMaskIntoConstraints = false
+
+        lbTituloCelda.lineBreakMode = .byWordWrapping
+
+        lbTituloCelda.sizeToFit()
+        
         cell.textLabel?.text = questionAnswer
         cell.textLabel?.numberOfLines = 0
         return cell
@@ -114,7 +124,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return UITableView.automaticDimension
     }
     
     /*

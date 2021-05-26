@@ -13,11 +13,15 @@ protocol AppDataSaver {
 
 class ReferenceTableViewController: UITableViewController, AppDataSaver {
     
+    @IBOutlet weak var bookmarks: UIBarButtonItem!
     var referenceList = [Reference]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Refappa"
+        
+        
+        
 
 //        let lesson = Lesson.init(
 //            lessonName: "Autor Tradicional",
@@ -327,9 +331,13 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let sections = segue.destination as! SectionViewController
-        sections.sectionTopicList = referenceList[tableView.indexPathForSelectedRow!.row].sections[0].topics
-        sections.appDataSaver = self
+        if segue.identifier == "regular" {
+            let sections = segue.destination as! SectionViewController
+            sections.sectionTopicList = referenceList[tableView.indexPathForSelectedRow!.row].sections[0].topics
+            sections.appDataSaver = self
+        } else if segue.identifier == "credits" {
+            let sections = segue.destination as! CreditsViewController
+            }
     }
 
 }
