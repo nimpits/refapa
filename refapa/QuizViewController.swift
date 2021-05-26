@@ -21,7 +21,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = lesson.lessonStructure.examples[0].getImage()
+        imageView.image = lesson.lessonQuiz.questions[0].questionImage.getImage()
         nextButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
