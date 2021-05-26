@@ -30,7 +30,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         if (lastAnswered == lesson.lessonQuiz.questions.count){
             lblCongrats.text = " Congratulations! You passed the quiz "
-            lblCongrats.textColor = UIColor.green
+            lblCongrats.textColor = UIColor.blue
             nextButton.setTitle("Back to main page", for: .normal)
             lesson.completed = true
             return 0
