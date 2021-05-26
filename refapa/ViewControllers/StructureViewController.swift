@@ -55,11 +55,14 @@ class StructureViewController: UIViewController, UITableViewDataSource, UITableV
         let quizVC = segue.destination as! QuizViewController
         quizVC.lesson = lesson
         quizVC.appDataSaver = appDataSaver
-        
-        
-       
-        
     }
    
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+        
+    }
 }

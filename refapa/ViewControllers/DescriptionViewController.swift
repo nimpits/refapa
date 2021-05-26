@@ -60,5 +60,14 @@ class DescriptionViewController: UIViewController, UITableViewDataSource, UITabl
         exampleVC.lesson = lesson
         exampleVC.appDataSaver = appDataSaver
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+        
+    }
 
 }

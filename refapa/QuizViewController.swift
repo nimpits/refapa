@@ -113,11 +113,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             else{
             }
-                
-        
-
             tableView.reloadData()
-        }else {
+        } else {
             lblCongrats.text = "¡Respuesta incorrecta!"
             lblCongrats.textColor = UIColor.init(red: 227/255, green: 82/255, blue: 66/255, alpha: 1)
             }
@@ -127,30 +124,12 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return UITableView.automaticDimension
     }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
     
-    /*
-     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?
-    {
+    override var shouldAutorotate: Bool {
+        return false
         
-        let question = lesson.lessonQuiz.questions[indexPath.row].questionText
-        
-        return question
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
- */
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }
