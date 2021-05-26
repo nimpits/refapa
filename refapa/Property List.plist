@@ -222,7 +222,7 @@
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Episodio de uns serie de televisión</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -267,7 +267,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>¿Quién es el autor de un episodio de televisión?</string>
+												<string>¿Quién es el autor de un episodio de serie de televisión?</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -525,7 +525,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Episodio de un a serie de televisión</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -544,7 +544,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso se pone la fecha excta de cuando se emitió el episodio.  Día (con número) de mes (con letra) de año (con número).</string>
+											<string>En este caso se pone la fecha exacta de cuando se emitió el episodio.  Día (con número) de mes (con letra) de año (con número).</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -569,8 +569,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>questionText</key>
-												<string>
-En un episodio de serie de televisión no se pone la fecha exacta de su emisión.</string>
+												<string>En un episodio de serie de televisión no se pone la fecha exacta de su emisión.</string>
 												<key>points</key>
 												<integer>5</integer>
 												<key>questionImage</key>
@@ -876,7 +875,7 @@ En un episodio de serie de televisión no se pone la fecha exacta de su emisión
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Episodio de una serie de televisión</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
@@ -1165,7 +1164,7 @@ En un episodio de serie de televisión no se pone la fecha exacta de su emisión
 								</dict>
 								<dict>
 									<key>lessonName</key>
-									<string>Episodio de un programa de televisión</string>
+									<string>Episodio de una serie de televisión</string>
 									<key>completed</key>
 									<false/>
 									<key>lessonStructure</key>
