@@ -253,7 +253,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="y7g-vu-nmx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.32315520426497529" green="0.76345935880829019" blue="0.2780146694363021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -264,7 +264,7 @@
                                     <constraint firstAttribute="height" constant="40" id="AKf-Iq-H8q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Check">
+                                <state key="normal" title="Checar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted">
