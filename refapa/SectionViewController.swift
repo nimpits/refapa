@@ -34,6 +34,8 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
         
         if (progress == 100.0) {
             cell.backgroundColor = UIColor(red: 0.24, green: 0.70, blue: 0.44, alpha: 1.00)
+        } else {
+            cell.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.98, alpha: 1.00)
         }
         
         // Rounded corners
@@ -82,7 +84,7 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
         }
         
         if (totalLessonsCompleted == 0) {
-            return 0
+            return 0.0
         } else {
             return floor((Double(totalLessonsCompleted) / (Double(totalLessons))) * 100)
         }
