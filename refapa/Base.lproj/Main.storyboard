@@ -723,7 +723,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m14-2S-d6T">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="122"/>
-                                                <string key="text">DesarrolladoresJesús Abraham Haros MadridJaime Hisao YesakiGonzaloSanitago Díaz Guevara</string>
+                                                <string key="text">Desarrolladores
+
+Jesús Abraham Haros Madrid
+Jaime Hisao Yesaki
+Gonzalo Sanchez-Bayo
+Sanitago Díaz Guevara</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
