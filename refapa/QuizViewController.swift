@@ -23,6 +23,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         imageView.image = lesson.lessonStructure.examples[0].getImage()
         nextButton.layer.cornerRadius = 5
+        title = lesson.lessonName
         // Do any additional setup after loading the view.
     }
     
