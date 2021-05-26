@@ -231,7 +231,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-ET-IDr">
-                                <rect key="frame" x="16" y="274" width="343" height="286"/>
+                                <rect key="frame" x="16" y="317" width="343" height="243"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="celda" rowHeight="30" id="FBB-Lv-l4O">
@@ -253,7 +253,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="y7g-vu-nmx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.32315520426497529" green="0.76345935880829019" blue="0.2780146694363021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -264,7 +264,7 @@
                                     <constraint firstAttribute="height" constant="40" id="AKf-Iq-H8q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Check">
+                                <state key="normal" title="Checar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted">
@@ -275,12 +275,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orp-4A-oh9">
-                                <rect key="frame" x="16" y="229" width="343" height="37"/>
+                                <rect key="frame" x="16" y="229" width="343" height="80"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="HFS-8c-yKL"/>
+                                    <constraint firstAttribute="height" constant="80" id="HFS-8c-yKL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -715,23 +715,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creada por:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvB-rw-zCK">
-                                <rect key="frame" x="139" y="73" width="96" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abraham Haros Santiago Diaz Gonzalo Sanchez Jaime Hisao Yesaki" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P4-NX-voW">
-                                <rect key="frame" x="109" y="102" width="157" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lC-Gq-TqC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-aM-4p6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m14-2S-d6T">
+                                                <rect key="frame" x="0.0" y="30" width="375" height="122"/>
+                                                <string key="text">DesarrolladoresJesús Abraham Haros MadridJaime Hisao YesakiGonzaloSanitago Díaz Guevara</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0S-k6-F6A">
+                                                <rect key="frame" x="0.0" y="182" width="375" height="818"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="2gS-vY-et1"/>
+                                            <constraint firstAttribute="trailing" secondItem="m14-2S-d6T" secondAttribute="trailing" id="3ed-mN-Ze5"/>
+                                            <constraint firstItem="m14-2S-d6T" firstAttribute="leading" secondItem="hUU-aM-4p6" secondAttribute="leading" id="6OF-OI-KfI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z0S-k6-F6A" secondAttribute="trailing" id="A4S-Z4-Itq"/>
+                                            <constraint firstItem="Z0S-k6-F6A" firstAttribute="leading" secondItem="hUU-aM-4p6" secondAttribute="leading" id="IFp-KV-VTB"/>
+                                            <constraint firstItem="m14-2S-d6T" firstAttribute="top" secondItem="hUU-aM-4p6" secondAttribute="top" constant="30" id="aar-nk-8nr"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z0S-k6-F6A" secondAttribute="bottom" id="cQe-v1-hfo"/>
+                                            <constraint firstItem="Z0S-k6-F6A" firstAttribute="top" secondItem="m14-2S-d6T" secondAttribute="bottom" constant="30" id="efe-jF-ekV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hUU-aM-4p6" firstAttribute="width" secondItem="TIt-zY-QQ6" secondAttribute="width" id="GxZ-TW-FgB"/>
+                                    <constraint firstItem="hUU-aM-4p6" firstAttribute="trailing" secondItem="8bL-V0-RAF" secondAttribute="trailing" id="Pe5-PM-L7q"/>
+                                    <constraint firstItem="hUU-aM-4p6" firstAttribute="bottom" secondItem="8bL-V0-RAF" secondAttribute="bottom" id="WGV-9x-g5L"/>
+                                    <constraint firstItem="hUU-aM-4p6" firstAttribute="leading" secondItem="8bL-V0-RAF" secondAttribute="leading" id="Za9-ca-Y2I"/>
+                                    <constraint firstItem="hUU-aM-4p6" firstAttribute="top" secondItem="8bL-V0-RAF" secondAttribute="top" id="xaV-fy-bye"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8bL-V0-RAF"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TIt-zY-QQ6"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="naT-mg-QyY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7lC-Gq-TqC" firstAttribute="bottom" secondItem="naT-mg-QyY" secondAttribute="bottom" id="8rJ-Yc-StI"/>
+                            <constraint firstItem="7lC-Gq-TqC" firstAttribute="trailing" secondItem="naT-mg-QyY" secondAttribute="trailing" id="ZkG-2i-fLa"/>
+                            <constraint firstItem="7lC-Gq-TqC" firstAttribute="leading" secondItem="naT-mg-QyY" secondAttribute="leading" id="c4K-jX-AHd"/>
+                            <constraint firstItem="7lC-Gq-TqC" firstAttribute="top" secondItem="naT-mg-QyY" secondAttribute="top" id="eVN-ex-mNK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Creditos" id="87z-yJ-43T"/>
                 </viewController>

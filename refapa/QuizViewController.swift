@@ -23,15 +23,16 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         imageView.image = lesson.lessonQuiz.questions[0].questionImage.getImage()
         nextButton.layer.cornerRadius = 5
+        title = lesson.lessonName
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let lastAnswered = lesson.lessonQuiz.lastQuestionAnswered
         if (lastAnswered == lesson.lessonQuiz.questions.count){
-            lblCongrats.text = " Congratulations! You passed the quiz "
-            lblCongrats.textColor = UIColor.blue
-            nextButton.setTitle("Back to main page", for: .normal)
+            lblCongrats.text = "¡Felicidades, pasaste el quiz!"
+            lblCongrats.textColor = UIColor.init(red: 31/255, green: 181/255, blue: 39/255, alpha: 1)
+            nextButton.setTitle("Volver a la página principal", for: .normal)
             lesson.completed = true
             return 0
         }else{
@@ -107,18 +108,15 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
       
         
         if (correct == true){
-            if (nextButton.titleLabel?.text == "Check"){
+            if (nextButton.titleLabel?.text == "Checar"){
                 lesson.lessonQuiz.lastQuestionAnswered += 1
             }
             else{
             }
-                
-        
-
             tableView.reloadData()
-        }else {
-            lblCongrats.text = "Respuesta incorrecta!"
-            lblCongrats.textColor = UIColor.red
+        } else {
+            lblCongrats.text = "¡Respuesta incorrecta!"
+            lblCongrats.textColor = UIColor.init(red: 227/255, green: 82/255, blue: 66/255, alpha: 1)
             }
      }
     
@@ -126,30 +124,12 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return UITableView.automaticDimension
     }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
     
-    /*
-     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath, titleForHeaderInSection section:Int) -> String?
-    {
+    override var shouldAutorotate: Bool {
+        return false
         
-        let question = lesson.lessonQuiz.questions[indexPath.row].questionText
-        
-        return question
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
- */
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }
