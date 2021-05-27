@@ -2551,7 +2551,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Estructura1</string>
 											</dict>
@@ -2578,19 +2578,27 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
-
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
-
-</string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample1</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo2</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2658,7 +2666,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Nombre del Grupo Musical [Grupo Musical]. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>EstructuraGrupo</string>
 											</dict>
@@ -2679,9 +2687,15 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Reik [Grupo musical] (2006).  Me duele amarte [Canción]. En Secuencia. Sony BMG Norte.</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>grupoMusical2</string>
+												<string>grupoMusical</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample3</string>
 											</dict>
 										</array>
 									</dict>
@@ -2764,7 +2778,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Estructura1</string>
 											</dict>
@@ -2786,19 +2800,27 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
-
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
-
-</string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample1</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo2</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2881,7 +2903,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Apellido Autor, Inicial Autor. (Año de publicación). Título de la grabación [Medio]. Ciudad: Sello musical.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Estructura1</string>
 											</dict>
@@ -2902,19 +2924,27 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Sesto, C. (1975).  A Escondidas [Canción]. En Amor Libre. Universal Music. 
-
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
-
-</string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample1</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>autorPrincipalEjemplo2</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2997,7 +3027,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Apellido, N. (año). Título de la canción [Canción]. En Título del álbum. Grabadora. URL</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Estructura2</string>
 											</dict>
@@ -3018,11 +3048,15 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>François, C. (1967). Comme d&apos;habitude [Canción]. En ​comme d&apos;habitude.Disques Flèche, Philips.​​ https://youtu.be/PWmceAWh4AE
-
-</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>autorPrincipalEjemplo1</string>
+												<string>autorPrincipalEjemplo2</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>songExample2</string>
 											</dict>
 										</array>
 									</dict>
