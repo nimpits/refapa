@@ -10,7 +10,7 @@
 	<array>
 		<dict>
 			<key>referenceName</key>
-			<string>Película</string>
+			<string>Película/Serie de televisión</string>
 			<key>priority</key>
 			<integer>0</integer>
 			<key>sections</key>
