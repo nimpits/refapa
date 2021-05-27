@@ -2519,7 +2519,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 													<key>imgDescription</key>
 													<string>Autor</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>autor</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2590,7 +2590,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 												<key>imgDescription</key>
 												<string>Reik [Grupo musical] (2006).  Me duele amarte [Canción]. En Secuencia. Sony BMG Norte.</string>
 												<key>imgFoto</key>
-												<string>Reik</string>
+												<string>grupoMusical2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2610,7 +2610,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 													<key>imgDescription</key>
 													<string>Autor</string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>grupoMusical2</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2686,7 +2686,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 											<string>Para escribir la referencia de una canción es necesario conocer su fecha de publicación, en este caso solo utilizaremos el año en el que se publicó escrito entre paréntesis.
 </string>
 											<key>imgFoto</key>
-											<string>FechaConsulta</string>
+											<string>songFecha</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2699,7 +2699,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>AEscondidas</string>
+												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
@@ -2707,7 +2707,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>Cancion2</string>
+												<string>autorPrincipalEjemplo2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2727,7 +2727,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 													<key>imgDescription</key>
 													<string>Reik</string>
 													<key>imgFoto</key>
-													<string>Reik</string>
+													<string>grupoMusical</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -2815,7 +2815,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>AEscondidas</string>
+												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
@@ -2823,7 +2823,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>Cancion2</string>
+												<string>autorPrincipalEjemplo2</string>
 											</dict>
 										</array>
 									</dict>
@@ -2918,7 +2918,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 											<key>imgDescription</key>
 											<string>Para escribir la referencia de una canción es necesario conocer el enlace de donde se extrajo. Este se escribe después del título del albúm. </string>
 											<key>imgFoto</key>
-											<string>FuenteConsulta</string>
+											<string>songEnlace</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -2931,7 +2931,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>Cancion2</string>
+												<string>autorPrincipalEjemplo1</string>
 											</dict>
 										</array>
 									</dict>
@@ -2951,7 +2951,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 													<key>imgDescription</key>
 													<string>Cancion2</string>
 													<key>imgFoto</key>
-													<string>Cancion2</string>
+													<string>grupoMusical</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
