@@ -1,7 +1,11 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "filename" : "movie.png",
+=======
+      "filename" : "movie.jpeg",
+>>>>>>> ee1e2d8c320418b13838b8282d079712f377c813
       "idiom" : "universal",
       "scale" : "1x"
     },
