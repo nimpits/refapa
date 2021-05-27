@@ -36,7 +36,7 @@ class SectionTableViewCell: UITableViewCell {
         
         cell.imgFoto.image = topicList[indexPath.row].getImage()
         cell.lbTitle.text = topicList[indexPath.row].topicName
-        cell.lbCompletion.text = String(topicList[indexPath.row].completion) + "% Completed"
+        cell.lbCompletion.text = String(topicList[indexPath.row].completion) + "% Completado"
         
         // Rounded corners
         cell.layer.cornerRadius = 8
