@@ -1272,7 +1272,7 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 							<key>topicDescription</key>
 							<string>Autor</string>
 							<key>imgFoto</key>
-							<string>cooking</string>
+							<string>yt-people</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -1290,9 +1290,9 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se debe colocar el nombre del canal como se especifica en la página del video.</string>
+												<string>Se debe colocar el nombre del autor con formato de Apellido, N. seguido del nombre de usuario entre corchetes.</string>
 												<key>imgFoto</key>
-												<string>nombre-de-canal</string>
+												<string>yt-canal-struct</string>
 											</dict>
 										</array>
 									</dict>
@@ -1312,9 +1312,15 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Como Debería Haber Terminado. (22 de abril de 2021). Como Wandavision Debería Haber  Terminado. [Video]. Youtube. https://www.youtube.com/watch?v=En6OxiLJSZc </string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>wandavision</string>
+												<string>yt-wandavision</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>yt-wandavision-ref</string>
 											</dict>
 										</array>
 									</dict>
@@ -1332,9 +1338,9 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string></string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>youtuber</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -1376,9 +1382,9 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Se debe colocar el nombre del autor con formato de Apellido, N. seguido del nombre de usuario entre corchetes.</string>
+												<string>Se debe colocar el nombre del orador con formato de Apellido, N. seguido del nombre de usuario entre corchetes.</string>
 												<key>imgFoto</key>
-												<string>nombre-de-orador</string>
+												<string>yt-orador-struct</string>
 											</dict>
 										</array>
 									</dict>
@@ -1388,7 +1394,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 											<key>imgDescription</key>
 											<string>Si es un video de una conferencia, por ejemplo, TED visto en YouTube, se coloca el nombre del orador como autor y entre corchetes el nombre de usuario que lo publica.</string>
 											<key>imgFoto</key>
-											<string>conferencista-ted</string>
+											<string>yt-conference</string>
 										</dict>
 									</array>
 									<key>lessonExample</key>
@@ -1397,9 +1403,15 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Swift, K. [TEDx Talks]. (31 de enero de 2020) What crows can teach us about death | Dr. Kaeli Swift | TEDxSalem. [Video]. Youtube. https://www.youtube.com/watch?v=cWuonbnOeBg</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>swift-k</string>
+												<string>yt-swift-k</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>yt-swift-ref</string>
 											</dict>
 										</array>
 									</dict>
@@ -1417,9 +1429,9 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string></string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>yt-conference</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -1458,7 +1470,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 							<key>topicDescription</key>
 							<string>Fecha</string>
 							<key>imgFoto</key>
-							<string>calendar</string>
+							<string>yt-calendar</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -1478,7 +1490,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>imgDescription</key>
 												<string>Se coloca la fecha completa escrita con día, mes y año.</string>
 												<key>imgFoto</key>
-												<string>nombre-de-orador</string>
+												<string>yt-orador-struct</string>
 											</dict>
 										</array>
 									</dict>
@@ -1497,9 +1509,15 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Ball, J. [Numberphile]. (23 de mayo de 2021). Parabolas and Archimedes - Numberphile. [Video]. Youtube. https://youtu.be/GAcUZ3my6E0</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>parabolas</string>
+												<string>yt-parabolas</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>yt-parabolas-ref</string>
 											</dict>
 										</array>
 									</dict>
@@ -1558,7 +1576,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 							<key>topicDescription</key>
 							<string>Título</string>
 							<key>imgFoto</key>
-							<string>youtube-play</string>
+							<string>yt-play-buttons</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -1578,7 +1596,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>imgDescription</key>
 												<string>Se escribe el título del video exacto, sin traducir, en itálicas. Después se coloca la palabra “Video” entre corchetes.</string>
 												<key>imgFoto</key>
-												<string>nombre-de-orador</string>
+												<string>yt-orador-struct</string>
 											</dict>
 										</array>
 									</dict>
@@ -1597,9 +1615,15 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Brownlee, M. (21 de mayo de 2021). Talking Tech and AI with Google CEO Sundar Pichai!. [Video]. Youtube. https://youtu.be/n2RNcPRtAiY</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>mkbhd</string>
+												<string>yt-mkbhd</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>yt-mkbhd-ref</string>
 											</dict>
 										</array>
 									</dict>
@@ -1617,9 +1641,9 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string></string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>yt-play-buttons</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
@@ -1658,7 +1682,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 							<key>topicDescription</key>
 							<string>Fuente</string>
 							<key>imgFoto</key>
-							<string>internet</string>
+							<string>yt-internet</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -1678,7 +1702,7 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>imgDescription</key>
 												<string>Se coloca el nombre de la plataforma, un punto, y la liga completa del video.</string>
 												<key>imgFoto</key>
-												<string>nombre-de-orador</string>
+												<string>yt-orador-struct</string>
 											</dict>
 										</array>
 									</dict>
@@ -1697,9 +1721,15 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Fridman, L. (24 de abril de 2020). Jack Dorsey: Square, Cryptocurrency, and Artificial Intelligence | Lex Fridman Podcast #91. [Video]. Youtube. https://youtu.be/60KJz1BVTyU</string>
+												<string></string>
 												<key>imgFoto</key>
-												<string>lex-jack</string>
+												<string>yt-lex-jack</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>yt-lex-ref</string>
 											</dict>
 										</array>
 									</dict>
@@ -1717,9 +1747,9 @@ Cuando se desconoce el nombre del orador o creador del video, se coloca el nombr
 												<key>questionImage</key>
 												<dict>
 													<key>imgDescription</key>
-													<string>Autor</string>
+													<string></string>
 													<key>imgFoto</key>
-													<string>Autor</string>
+													<string>yt-internet</string>
 												</dict>
 												<key>questionAnswer</key>
 												<array>
