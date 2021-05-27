@@ -124,6 +124,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return UITableView.automaticDimension
     }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
     }
