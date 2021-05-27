@@ -19,6 +19,8 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var correct : Bool!
     var appDataSaver: AppDataSaver!
     
+    var noOptionSelected = true;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = lesson.lessonQuiz.questions[0].questionImage.getImage()
@@ -96,6 +98,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             correct = false
            
         }
+        noOptionSelected = false
     }
     
     
@@ -115,9 +118,12 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             tableView.reloadData()
         } else {
+            if noOptionSelected == false{
             lblCongrats.text = "¡Respuesta incorrecta!"
             lblCongrats.textColor = UIColor.init(red: 227/255, green: 82/255, blue: 66/255, alpha: 1)
-            }
+        }
+        
+     }
      }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
