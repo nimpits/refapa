@@ -30,7 +30,7 @@ class SectionViewController: UIViewController, UICollectionViewDataSource, UICol
         cell.imgFoto.image = sectionTopicList[indexPath.row].getImage()
         cell.lbTitle.text = sectionTopicList[indexPath.row].topicName
         let progress = calculateProgress(topic: sectionTopicList[indexPath.row])
-        cell.lbCompletion.text = String(progress) + "% Completed"
+        cell.lbCompletion.text = String(progress) + "% Completado"
         
         if (progress == 100.0) {
             cell.backgroundColor = UIColor(red: 0.24, green: 0.70, blue: 0.44, alpha: 1.00)
