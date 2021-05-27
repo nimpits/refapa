@@ -2582,7 +2582,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>aEscondidas</string>
+												<string>autorPrincipalEjemplo1</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
@@ -2590,7 +2590,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 
 </string>
 												<key>imgFoto</key>
-												<string>Cancion2</string>
+												<string>autorPrincipalEjemplo2</string>
 											</dict>
 										</array>
 									</dict>
