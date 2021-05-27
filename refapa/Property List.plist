@@ -2418,7 +2418,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 				</dict>
 			</array>
 			<key>referenceImage</key>
-			<string>blog</string>
+			<string>onlineBlog</string>
 		</dict>
 		<dict>
 			<key>referenceName</key>
