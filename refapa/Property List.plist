@@ -10,7 +10,8 @@
 	<array>
 		<dict>
 			<key>referenceName</key>
-			<string>Película/Serie de televisión</string>
+			<string>Película/
+Serie de televisión</string>
 			<key>priority</key>
 			<integer>0</integer>
 			<key>sections</key>
@@ -2532,7 +2533,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 							<key>topicDescription</key>
 							<string>Autor</string>
 							<key>imgFoto</key>
-							<string>Autor</string>
+							<string>autor</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -2978,7 +2979,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 							<key>topicDescription</key>
 							<string>Enlace</string>
 							<key>imgFoto</key>
-							<string>FuenteConsulta</string>
+							<string>songEnlace</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
