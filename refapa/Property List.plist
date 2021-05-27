@@ -2746,7 +2746,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 							<key>topicDescription</key>
 							<string>Fecha</string>
 							<key>imgFoto</key>
-							<string>FechaConsulta</string>
+							<string>songFecha</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
@@ -2863,7 +2863,7 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 							<key>topicDescription</key>
 							<string>Título</string>
 							<key>imgFoto</key>
-							<string>paginas</string>
+							<string>songTitle</string>
 							<key>priority</key>
 							<integer>0</integer>
 							<key>completion</key>
