@@ -24,7 +24,6 @@ class CreditsViewController: UIViewController {
         
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -33,6 +32,11 @@ class CreditsViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+     Todos los recursos gráficos fueron
+     recuperados de: https://www.freepik.com/
+     
+     La información fue recuperada de:
+     https://normas-apa.org/
     */
 
 }
