@@ -58,7 +58,7 @@
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).
+											<string>La referencias de Youtube siguen el estándar de mostrar al lector quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo) pueden encontrar el video.
 Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
 											<key>imgFoto</key>
 											<string>youtuber</string>
@@ -2114,7 +2114,9 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para citar un libro.</string>
+											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). 
+
+Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para citar un libro.</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
