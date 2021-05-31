@@ -83,6 +83,7 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
             let sections = segue.destination as! SectionViewController
             sections.sectionTopicList = referenceList[tableView.indexPathForSelectedRow!.row].sections[0].topics
             sections.appDataSaver = self
+            sections.title = referenceList[tableView.indexPathForSelectedRow!.row].referenceName
         } else if segue.identifier == "credits" {
             let sections = segue.destination as! CreditsViewController
             }
