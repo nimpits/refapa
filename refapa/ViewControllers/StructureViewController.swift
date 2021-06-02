@@ -56,6 +56,10 @@ class StructureViewController: UIViewController, UITableViewDataSource, UITableV
         quizVC.lesson = lesson
         quizVC.appDataSaver = appDataSaver
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        appDataSaver.saveAppData()
+    }
    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
