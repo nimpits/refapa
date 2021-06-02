@@ -36,6 +36,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             lblCongrats.textColor = UIColor.init(red: 31/255, green: 181/255, blue: 39/255, alpha: 1)
             nextButton.setTitle("Volver a la página principal", for: .normal)
             lesson.completed = true
+            appDataSaver.saveAppData()
             return 0
         }else{
             return lesson.lessonQuiz.questions[lastAnswered].questionAnswer.count 
@@ -95,6 +96,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //give poitns to the user
         }else {
             lesson.lessonQuiz.lastQuestionAnswered = lastAnswered
+            appDataSaver.saveAppData()
             correct = false
            
         }
