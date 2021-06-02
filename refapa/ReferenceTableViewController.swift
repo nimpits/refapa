@@ -20,34 +20,92 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
         super.viewDidLoad()
         title = "Refappa"
         
-        let ruta = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
+        if (!FileManager.default.fileExists(atPath: path.path)) {
+            print("MainApp.plist does not exist, writing in documents...")
+            writeSourcePlistToDocuments()
+            readMainAppPlist()
+        } else {
+            print("MainApp.plist does exist.")
+            readMainAppPlist()
+        }
         
+    }
+    
+    var mainApp: MainApp!
+    
+    func readMainAppPlist() {
+        let ruta = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
         do {
-            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta!))
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta.path))
             mainApp = try PropertyListDecoder().decode(MainApp.self, from: data)
             referenceList = mainApp.references
         }
         catch {
             print(error)
-            print("Error al cargar el archivo")
+            let alert = UIAlertController(title: "ERROR", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
-    var mainApp: MainApp!
+    func writeSourcePlistToDocuments() {
+        let ruta = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        var tempApp: MainApp!
+        
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta!))
+            tempApp = try PropertyListDecoder().decode(MainApp.self, from: data)
+        }
+        catch {
+            print(error)
+            let alert = UIAlertController(title: "ERROR", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
+        print(path)
+
+        do {
+            let data = try encoder.encode(tempApp)
+            try data.write(to: path)
+            let alert = UIAlertController(title: "SUCCESS", message: "MainApp.plist was succesfully written.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        } catch {
+            print(error)
+            let alert = UIAlertController(title: "ERROR", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     
     func saveAppData() {
-        let ruta = Bundle.main.path(forResource: "Property List", ofType: "plist")!
+        let ruta = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
+        print(ruta)
 
         do {
             let encoder = PropertyListEncoder()
             encoder.outputFormat = .xml
             let data = try encoder.encode(mainApp)
             
-            try data.write(to: URL.init(fileURLWithPath: ruta))
+            try data.write(to: URL.init(fileURLWithPath: ruta.path))
         }
         catch {
             print(error)
-            let alert = UIAlertController(title: "My Alert", message: error.localizedDescription, preferredStyle: .alert)
+            let alert = UIAlertController(title: "ERROR", message: error.localizedDescription, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))
