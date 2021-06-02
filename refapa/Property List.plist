@@ -1217,7 +1217,13 @@ Deberás proporcionar el nombre del artista de la grabación para las canciones 
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>The Home Depot. (2021, marzo 2021). 8 ideas para decorar con plantas. [Mensaje en un blog] The home depot blog. https://blog.homedepot.com.mx/club-jardineria/plantas-y-accesorios/8-ideas-para-decorar-con-plantas </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>ejemploCorporativo</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>ejemploCorporativo</string>
 											</dict>
