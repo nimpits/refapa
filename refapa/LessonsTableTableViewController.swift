@@ -20,6 +20,10 @@ class LessonsTableTableViewController: UITableViewController {
         title = topic.topicName
         lessonList = topic.lessons
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 

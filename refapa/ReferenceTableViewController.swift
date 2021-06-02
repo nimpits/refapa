@@ -47,7 +47,11 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
         }
         catch {
             print(error)
-            print("Error al guardar el datos")
+            let alert = UIAlertController(title: "My Alert", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 
@@ -83,6 +87,7 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
             let sections = segue.destination as! SectionViewController
             sections.sectionTopicList = referenceList[tableView.indexPathForSelectedRow!.row].sections[0].topics
             sections.appDataSaver = self
+            sections.title = referenceList[tableView.indexPathForSelectedRow!.row].referenceName
         } else if segue.identifier == "credits" {
             let sections = segue.destination as! CreditsViewController
             }

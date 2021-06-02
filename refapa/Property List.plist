@@ -58,7 +58,7 @@
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>La referencias de Youtube siguen el estándar de quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo).
+											<string>La referencias de Youtube siguen el estándar de mostrar al lector quién (autor, usuario de youtube), cuándo (fecha de publicación del vídeo), qué (título del vídeo) y dónde (URL del vídeo) pueden encontrar el video.
 Cuando se desconoce el nombre del orador o creador del video, se coloca el nombre del canal como autor.</string>
 											<key>imgFoto</key>
 											<string>youtuber</string>
@@ -1866,8 +1866,7 @@ Si hay un enlace que da directamente al comentario, use ese, de lo contrario agr
 		</dict>
 		<dict>
 			<key>referenceName</key>
-			<string>Película
-Serie de televisión</string>
+			<string>Película</string>
 			<key>priority</key>
 			<integer>0</integer>
 			<key>sections</key>
@@ -1926,21 +1925,39 @@ Serie de televisión</string>
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>cruella</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo1Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Nomadland</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo2Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Knives Out</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo3Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2017,10 +2034,15 @@ Serie de televisión</string>
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>La casa de papel</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo4Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2098,8 +2120,9 @@ Serie de televisión</string>
 									<array>
 										<dict>
 											<key>imgDescription</key>
-											<string>En este caso, debes incluir a los guionistas y directores del episodio. Debes informar el nombre y papel de la persona entre paréntesis después de cada nombre.
-Si una misma persona realizó múltiples roles, combine las descripciones dentro del mismo paréntesis. Ejemplo: (Guionista y Director).</string>
+											<string>Debes informar los productores ejecutivos como autor en la referencia. Debes agregar después del nombre, entre paréntesis (Productor ejecutivo). 
+
+Si son varios productores ejecutivos, informe el nombre de todos los productores, de la misma forma que lo haría para citar un libro.</string>
 											<key>imgFoto</key>
 											<string>Guionista</string>
 										</dict>
@@ -2110,9 +2133,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Breaking Bad</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo5Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2216,21 +2245,39 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>cruella</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo1Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Nomadland</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo2Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Knives Out</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo3Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2320,10 +2367,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>La casa de papel</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo4Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2412,9 +2464,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Breaking Bad</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo5Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2506,15 +2564,27 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>cruella</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo1Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Nomadland</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo2Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2591,9 +2661,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Knives Out</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo3Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2676,10 +2752,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>La casa de papel</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo4Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2762,9 +2843,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Breaking Bad</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo5Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2868,21 +2955,39 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Gillespie, C. (Director). (2021). Cruella [Película]. Disney. </string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>cruella</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Zhao, C. (Director). (2020). Nomadland [Película]. Searchlight pictures. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo1Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Nomadland</string>
 											</dict>
 											<dict>
 												<key>imgDescription</key>
-												<string>Johnson, R. (Director). (2019). Knives Out [Entre navajas y secretos] [Película]. Lionsgate; T-Street; MCM. </string>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo2Pelicula</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Knives Out</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo3Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -2959,10 +3064,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Jesús Colmenar y Alex Pina (Productores ejecutivos). (2017 - actualidad). La casa de papel [Serie de Televisión]. Atresmedia; Vancouver Media.
-</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>La casa de papel</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo4Pelicula</string>
 											</dict>
 										</array>
 									</dict>
@@ -3051,9 +3161,15 @@ Si una misma persona realizó múltiples roles, combine las descripciones dentro
 										<array>
 											<dict>
 												<key>imgDescription</key>
-												<string>Shiban, J. (Productor y Guionista). (25 de abril de 2010). Sunset (Temporada 3, Episodio 6) [Episodio de serie de televisión]. En Gilligan, V., Johnson, M. y MacLaren, M. (Productores ejecutivo), Breaking Bad. High Bridge Entertainment; Gran Via Productions; Sony Pictures Television.</string>
+												<string></string>
 												<key>imgFoto</key>
 												<string>Breaking Bad</string>
+											</dict>
+											<dict>
+												<key>imgDescription</key>
+												<string></string>
+												<key>imgFoto</key>
+												<string>Ejemplo5Pelicula</string>
 											</dict>
 										</array>
 									</dict>
