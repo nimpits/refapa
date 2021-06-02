@@ -20,19 +20,23 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
         super.viewDidLoad()
         title = "Refappa"
         
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
-        if (!FileManager.default.fileExists(atPath: path.path)) {
-            print("MainApp.plist does not exist, writing in documents...")
-            writeSourcePlistToDocuments()
-            readMainAppPlist()
-        } else {
-            print("MainApp.plist does exist.")
-            readMainAppPlist()
-        }
+        initMainAppData()
         
     }
     
     var mainApp: MainApp!
+    
+    func initMainAppData() {
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
+        if (!FileManager.default.fileExists(atPath: path.path)) {
+//            print("MainApp.plist does not exist, writing in documents...")
+            writeSourcePlistToDocuments()
+            readMainAppPlist()
+        } else {
+//            print("MainApp.plist does exist.")
+            readMainAppPlist()
+        }
+    }
     
     func readMainAppPlist() {
         let ruta = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
@@ -72,16 +76,10 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
         encoder.outputFormat = .xml
 
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
-        print(path)
 
         do {
             let data = try encoder.encode(tempApp)
             try data.write(to: path)
-            let alert = UIAlertController(title: "SUCCESS", message: "MainApp.plist was succesfully written.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(alert, animated: true, completion: nil)
         } catch {
             print(error)
             let alert = UIAlertController(title: "ERROR", message: error.localizedDescription, preferredStyle: .alert)
@@ -94,7 +92,6 @@ class ReferenceTableViewController: UITableViewController, AppDataSaver {
     
     func saveAppData() {
         let ruta = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("MainApp.plist")
-        print(ruta)
 
         do {
             let encoder = PropertyListEncoder()
