@@ -113,6 +113,7 @@ class QuizViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if (correct == true){
             if (nextButton.titleLabel?.text == "Checar"){
                 lesson.lessonQuiz.lastQuestionAnswered += 1
+                appDataSaver.saveAppData()
             }
             else{
             }
